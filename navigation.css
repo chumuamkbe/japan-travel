@@ -6,3 +6,6 @@ nav.site-nav a[aria-current="page"]{background:#5b7167!important;color:#fffdf7!i
 nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
 @media(max-width:700px){nav.site-nav{gap:5px!important;}nav.site-nav a{min-height:43px;padding:10px 14px!important;font-size:14px!important;border-radius:11px;}}
 @media print{nav.site-nav{display:none!important;}}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;min-width:0}.site-brand{flex:0 0 auto;color:#34423d;text-decoration:none;font:600 20px/1.5 "PingFang TC","Microsoft JhengHei",sans-serif;letter-spacing:.04em;white-space:nowrap}.site-header nav.site-nav{width:auto;max-width:calc(100% - 130px);margin-left:auto!important;justify-content:flex-end;padding:0!important}.site-header nav.site-nav a{padding:11px 15px!important;font-size:15px!important;min-height:48px}.top:has(.site-header){display:block}header:has(>.site-header){display:block}
+@media(max-width:800px){.site-header{flex-wrap:wrap;gap:12px}.site-brand{font-size:18px}.site-header nav.site-nav{max-width:100%;width:100%;justify-content:flex-start}.site-header nav.site-nav a{padding:9px 12px!important;font-size:14px!important;min-height:42px}}

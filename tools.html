@@ -14,13 +14,16 @@ nav.site-nav a[aria-current="page"]{background:#5b7167!important;color:#fffdf7!i
 nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
 @media(max-width:700px){nav.site-nav{gap:5px!important;}nav.site-nav a{min-height:43px;padding:10px 14px!important;font-size:14px!important;border-radius:11px;}}
 @media print{nav.site-nav{display:none!important;}}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;width:100%;min-width:0}.site-brand{flex:0 0 auto;color:#34423d;text-decoration:none;font:600 20px/1.5 "PingFang TC","Microsoft JhengHei",sans-serif;letter-spacing:.04em;white-space:nowrap}.site-header nav.site-nav{width:auto;max-width:calc(100% - 130px);margin-left:auto!important;justify-content:flex-end;padding:0!important}.site-header nav.site-nav a{padding:11px 15px!important;font-size:15px!important;min-height:48px}.top:has(.site-header){display:block}header:has(>.site-header){display:block}
+@media(max-width:800px){.site-header{flex-wrap:wrap;gap:12px}.site-brand{font-size:18px}.site-header nav.site-nav{max-width:100%;width:100%;justify-content:flex-start}.site-header nav.site-nav a{padding:9px 12px!important;font-size:14px!important;min-height:42px}}
 </style></head>
 <body>
-<header>
+<header><div class="site-header"><a class="site-brand" href="index.html">東京之旅</a><nav class="site-nav" aria-label="網站頁面"><a href="index.html">首頁</a><a href="itinerary.html">行程</a><a href="collections.html">收藏</a><a href="map.html">地圖</a><a href="kart.html">卡丁車</a><a href="tools.html" aria-current="page">工具</a><a href="stay.html">住宿</a><a href="editor.html">編輯</a></nav></div>
   <p class="eyebrow">TOKYO · 2026.12.03 — 12.13 · 2 人</p>
   <h1>旅途工具箱</h1>
   <p class="intro">班機、住宿、票券的待辦一覽，加上可勾選的行李清單、備忘與匯率換算。未確認的時刻一律標「待訂單／待核實」。</p>
-  <nav class="site-nav" aria-label="網站頁面"><a href="index.html">首頁</a><a href="itinerary.html">行程</a><a href="collections.html">收藏</a><a href="map.html">地圖</a><a href="kart.html">卡丁車</a><a href="tools.html" aria-current="page">工具</a><a href="stay.html">住宿</a><a href="editor.html">編輯</a></nav>
+
 </header>
 
 <div class="tabs" role="tablist" aria-label="工具分頁">
