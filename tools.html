@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="2026 十二月東京旅遊工具：班機住宿、交通、票券、行李清單、備忘、匯率換算與官方資訊連結。">
+<title>旅遊工具｜東京 2026 十二月</title>
+<link rel="stylesheet" href="travel-tools.css">
+</head>
+<body>
+<header>
+  <p class="eyebrow">TOKYO · 2026.12.03 — 12.13 · 2 人</p>
+  <h1>旅途工具箱</h1>
+  <p class="intro">班機、住宿、票券的待辦一覽，加上可勾選的行李清單、備忘與匯率換算。未確認的時刻一律標「待訂單／待核實」。</p>
+  <nav aria-label="網站頁面">
+    <a href="index.html">首頁</a><a href="itinerary.html">行程</a><a href="collections.html">收藏</a><a href="map.html">地圖</a><a href="kart.html">卡丁車</a><a href="stay.html">住宿比較</a><a href="tools.html" aria-current="page">工具</a>
+  </nav>
+</header>
+
+<div class="tabs" role="tablist" aria-label="工具分頁">
+  <button role="tab" id="tab-overview" aria-controls="p-overview" aria-selected="true">班機住宿</button>
+  <button role="tab" id="tab-transport" aria-controls="p-transport" aria-selected="false" tabindex="-1">交通</button>
+  <button role="tab" id="tab-tickets" aria-controls="p-tickets" aria-selected="false" tabindex="-1">票券</button>
+  <button role="tab" id="tab-packing" aria-controls="p-packing" aria-selected="false" tabindex="-1">行李清單</button>
+  <button role="tab" id="tab-memo" aria-controls="p-memo" aria-selected="false" tabindex="-1">旅途備忘</button>
+  <button role="tab" id="tab-fx" aria-controls="p-fx" aria-selected="false" tabindex="-1">匯率換算</button>
+  <button role="tab" id="tab-info" aria-controls="p-info" aria-selected="false" tabindex="-1">實用資訊</button>
+</div>
+
+<main>
+<p id="storage-warning" class="notice warn" hidden>此瀏覽器無法使用本機儲存（可能是私密瀏覽或已停用），清單與備忘在關閉頁面後會遺失。請用「匯出 JSON」自行備份。</p>
+
+<section id="p-overview" role="tabpanel" aria-labelledby="tab-overview">
+  <h2>班機・住宿一覽</h2>
+  <div class="grid">
+    <article class="card pink">
+      <p class="label">去程 · 12/3</p>
+      <h3>MM620</h3>
+      <p>出發 <strong>02:25</strong></p>
+      <p>抵達：旅客估 6 點多，<span class="tag">依訂單</span></p>
+    </article>
+    <article class="card pink">
+      <p class="label">回程 · 12/13</p>
+      <h3>MM627</h3>
+      <p>出發 <strong>22:25</strong></p>
+      <p class="muted">航廈與抵達時間以訂單為準。</p>
+    </article>
+  </div>
+  <h3 class="sub">住宿</h3>
+  <ol class="timeline">
+    <li class="card green"><p class="label">12/3 — 12/9 · 六晚</p><h3>東京</h3><p><span class="tag todo">未訂</span> 比較見 <a href="stay.html">住宿比較</a></p></li>
+    <li class="card green"><p class="label">12/9 — 12/11 · 兩晚</p><h3>野澤</h3><p><span class="tag ok">已安排</span> 住宿名稱待補</p></li>
+    <li class="card green"><p class="label">12/11 — 12/13 · 兩晚</p><h3>東京</h3><p><span class="tag todo">未訂</span></p></li>
+  </ol>
+</section>
+
+<section id="p-transport" role="tabpanel" aria-labelledby="tab-transport" hidden>
+  <h2>交通</h2>
+  <div class="grid">
+    <article class="card green">
+      <p class="label">12/3 · 抵達後</p>
+      <h3>Skyliner 進東京</h3>
+      <p class="muted">班次依實際抵達時間選擇。</p>
+    </article>
+    <article class="card green">
+      <p class="label">回程</p>
+      <h3>目標 17:20 班次</h3>
+      <p><span class="tag todo">僅預留・待核實時刻</span></p>
+    </article>
+    <article class="card pink">
+      <p class="label">12/9 — 12/11 · 野澤</p>
+      <h3>4 人租車</h3>
+      <p><span class="tag ok">已安排</span> 店家待補</p>
+    </article>
+    <article class="card pink">
+      <p class="label">12/11</p>
+      <h3>還器材</h3>
+      <p>最晚 <strong>16:30</strong></p>
+    </article>
+  </div>
+</section>
+
+<section id="p-tickets" role="tabpanel" aria-labelledby="tab-tickets" hidden>
+  <h2>票券・預約</h2>
+  <p class="muted">固定日期的票券沒有訂單前不填時刻。</p>
+  <div class="grid">
+    <article class="card green"><p class="label">12/5</p><h3>挽肉と米</h3><p>目標 17:00</p><p><span class="tag todo">未預約</span></p></article>
+    <article class="card green"><p class="label">12/6</p><h3>河口湖</h3><p><span class="tag">日期固定・時刻依訂單</span></p></article>
+    <article class="card green"><p class="label">12/7</p><h3>teamLab</h3><p><span class="tag">日期固定・時刻依訂單</span></p></article>
+    <article class="card green"><p class="label">12/7</p><h3>冨所</h3><p>目標 19:30</p><p><span class="tag todo">未預約</span></p></article>
+    <article class="card green"><p class="label">12/8</p><h3>卡丁車</h3><p><span class="tag">日期固定・時刻依訂單</span></p><p><a href="kart.html">卡丁車頁</a></p></article>
+  </div>
+</section>
+
+<section id="p-packing" role="tabpanel" aria-labelledby="tab-packing" hidden>
+  <h2>行李清單</h2>
+  <p class="notice">勾選與增刪只存在<strong>這台裝置的這個瀏覽器</strong>，不會上傳。換手機或清除瀏覽資料會消失，可到「旅途備忘」匯出 JSON 備份。</p>
+  <div class="progress-box">
+    <p id="pack-total" class="progress-text" aria-live="polite"></p>
+    <progress id="pack-bar" max="1" value="0"></progress>
+    <ul id="pack-cats" class="cat-progress"></ul>
+  </div>
+  <form id="pack-form" class="row-form">
+    <label>分類<select id="pack-cat"></select></label>
+    <label class="grow">項目<input id="pack-text" maxlength="120" required placeholder="例：備用眼鏡"></label>
+    <button type="submit">新增</button>
+  </form>
+  <p id="pack-error" class="error" role="alert"></p>
+  <div id="pack-list"></div>
+  <p><button type="button" id="pack-reset" class="ghost">恢復預設清單</button></p>
+</section>
+
+<section id="p-memo" role="tabpanel" aria-labelledby="tab-memo" hidden>
+  <h2>旅途備忘</h2>
+  <p class="notice warn">僅存本機。<strong>請勿寫入護照號碼、訂單編號、信用卡等個資</strong>；匯出的 JSON 也請自行保管，不要公開分享。</p>
+  <form id="memo-form" class="memo-form">
+    <input type="hidden" id="memo-id">
+    <label>標題<input id="memo-title" maxlength="60" required placeholder="例：12/7 晚餐備案"></label>
+    <label>內容<textarea id="memo-body" maxlength="2000" rows="4"></textarea></label>
+    <div class="btns"><button type="submit" id="memo-save">新增備忘</button><button type="button" id="memo-cancel" class="ghost" hidden>取消編輯</button></div>
+  </form>
+  <p id="memo-error" class="error" role="alert"></p>
+  <div id="memo-list"></div>
+  <h3 class="sub">備份（清單＋備忘）</h3>
+  <div class="btns">
+    <button type="button" id="export-btn">匯出 JSON</button>
+    <label class="file-btn">匯入 JSON<input type="file" id="import-file" accept="application/json,.json"></label>
+  </div>
+  <p id="io-msg" class="hint" role="status"></p>
+</section>
+
+<section id="p-fx" role="tabpanel" aria-labelledby="tab-fx" hidden>
+  <h2>匯率換算</h2>
+  <div class="card green">
+    <p class="label">公告參考匯率</p>
+    <p id="fx-status" class="fx-status" role="status">尚無匯率。按「更新匯率」取得，或下方手動輸入。</p>
+    <dl id="fx-rates" class="fx-rates"></dl>
+    <button type="button" id="fx-refresh">更新匯率</button>
+    <p class="hint">來源：<a href="https://frankfurter.dev/" target="_blank" rel="noopener">Frankfurter API</a>（參考中間價，非刷卡或換匯實際價）。</p>
+  </div>
+  <form id="fx-form" class="fx-form">
+    <label>金額<input id="fx-amount" inputmode="decimal" value="10000" autocomplete="off"></label>
+    <label>幣別<select id="fx-cur"><option value="JPY">JPY 日圓</option><option value="TWD">TWD 台幣</option><option value="USD">USD 美元</option></select></label>
+  </form>
+  <div class="quick" aria-label="常用金額">
+    <button type="button" data-jpy="1000">¥1,000</button><button type="button" data-jpy="5000">¥5,000</button><button type="button" data-jpy="10000">¥10,000</button><button type="button" data-jpy="30000">¥30,000</button>
+  </div>
+  <p id="fx-error" class="error" role="alert"></p>
+  <ul id="fx-out" class="fx-out" aria-live="polite"></ul>
+  <details class="manual">
+    <summary>手動輸入匯率（備案）</summary>
+    <p class="hint">網路不通時用。手動匯率<strong>不是即時資料</strong>，畫面會標示「手動」。</p>
+    <form id="fx-manual" class="row-form">
+      <label>1 JPY = ? TWD<input id="fx-m-twd" inputmode="decimal" placeholder="例：0.2"></label>
+      <label>1 JPY = ? USD<input id="fx-m-usd" inputmode="decimal" placeholder="例：0.0065"></label>
+      <button type="submit">套用</button>
+    </form>
+  </details>
+</section>
+
+<section id="p-info" role="tabpanel" aria-labelledby="tab-info" hidden>
+  <h2>實用資訊（官方連結）</h2>
+  <div class="grid">
+    <article class="card pink">
+      <p class="label">日本海關 · 免稅</p>
+      <h3>2026/11/1 起免稅改制</h3>
+      <p>購物時先付含稅價，離境時經海關確認後，由店家退還消費稅。要退稅的商品請在托運行李前處理。細節以官方頁為準。</p>
+      <p><a href="https://www.customs.go.jp/kaigairyoko/taxrefund.htm" target="_blank" rel="noopener">Japan Customs 官方說明 ↗</a></p>
+    </article>
+    <article class="card green">
+      <p class="label">入境手續</p>
+      <h3>Visit Japan Web</h3>
+      <p>入境・海關申報的官方線上服務。</p>
+      <p><a href="https://www.vjw.digital.go.jp/" target="_blank" rel="noopener">vjw.digital.go.jp ↗</a></p>
+    </article>
+    <article class="card green">
+      <p class="label">天氣</p>
+      <h3>氣象廳 天氣預報</h3>
+      <p>出發前看東京、長野（野澤）預報。</p>
+      <p><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank" rel="noopener">jma.go.jp ↗</a></p>
+    </article>
+  </div>
+</section>
+</main>
+<footer><p class="hint">本頁不收集資料；清單與備忘只存在本機瀏覽器。匯率按下更新時才連線 Frankfurter。</p></footer>
+<script src="travel-tools.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+:root{--bg:#f3f0e9;--ink:#28332c;--green:#2f4a3c;--muted:#68736a;--line:#d8d6cc;--pink:#f3e3dd;--pink-line:#e4c7bd;--mint:#e3ebe0;--mint-line:#c6d5c3;--rust:#9a4a35;--gold:#b08a3e}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif}
+header,main,footer{max-width:960px;margin:auto;padding:0 18px}
+header{padding-top:32px}
+a{color:var(--green);text-underline-offset:4px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.eyebrow,.label{font-size:11px;letter-spacing:.16em;color:var(--muted);margin:0}
+h1,h2,h3{font-family:"Songti TC","Noto Serif TC","Source Han Serif TC",serif;font-weight:500;color:var(--green)}
+h1{font-size:clamp(34px,8vw,56px);line-height:1.25;margin:12px 0}
+h2{font-size:26px;margin:28px 0 12px}
+h3{font-size:20px;margin:4px 0;line-height:1.4}
+h3.sub{margin:28px 0 10px}
+p{margin:6px 0}
+.intro,.muted,.hint{color:var(--muted)}
+.hint{font-size:13px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 0}
+nav a{border:1px solid var(--line);padding:6px 12px;text-decoration:none;font-size:13px;color:var(--ink)}
+nav a[aria-current]{background:var(--green);color:#fff;border-color:var(--green)}
+
+.tabs{position:sticky;top:0;z-index:5;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;background:var(--bg);border-bottom:1px solid var(--line);padding:12px max(18px,calc((100% - 924px)/2)) 0;margin-top:22px}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:0;border-bottom:3px solid transparent;background:none;padding:10px 12px;font:inherit;font-size:15px;color:var(--muted);cursor:pointer;min-height:44px}
+.tabs button[aria-selected="true"]{color:var(--green);border-bottom-color:var(--green);font-weight:600}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.card{border:1px solid var(--line);padding:16px 18px;border-radius:4px}
+.card.pink{background:var(--pink);border-color:var(--pink-line)}
+.card.green{background:var(--mint);border-color:var(--mint-line)}
+.timeline{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border:1px solid currentColor;border-radius:99px;color:var(--muted)}
+.tag.todo{color:var(--rust)}
+.tag.ok{color:var(--green)}
+.notice{border-left:3px solid var(--green);background:#e9e5da;padding:12px 16px;font-size:14px}
+.notice.warn{border-left-color:var(--rust)}
+.error{color:var(--rust);font-size:14px;min-height:1px}
+.error:empty{display:none}
+
+button,.file-btn{font:inherit;font-size:15px;min-height:44px;padding:8px 16px;border:1px solid var(--green);background:var(--green);color:#fff;border-radius:4px;cursor:pointer}
+button.ghost,.file-btn{background:transparent;color:var(--green)}
+button.icon{min-height:36px;padding:4px 10px;font-size:13px;background:transparent;color:var(--muted);border-color:var(--line)}
+.file-btn{display:inline-flex;align-items:center}
+.file-btn input{position:absolute;width:1px;height:1px;opacity:0}
+.file-btn:focus-within{outline:3px solid var(--gold)}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+input,select,textarea{font:inherit;font-size:16px;width:100%;padding:9px 10px;border:1px solid var(--line);background:#fffdf8;color:var(--ink);border-radius:4px}
+label{display:block;font-size:13px;color:var(--muted)}
+label input,label select,label textarea{margin-top:3px}
+.row-form{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:16px 0 6px}
+.row-form label{flex:1 1 140px}
+.row-form label.grow{flex:3 1 200px}
+.memo-form label{margin:10px 0}
+
+.progress-box{background:#fffdf8;border:1px solid var(--line);padding:14px 16px;border-radius:4px}
+.progress-text{font-family:"Songti TC",serif;font-size:20px;color:var(--green)}
+progress{width:100%;height:10px;accent-color:var(--green)}
+.cat-progress{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:4px 14px;font-size:13px;color:var(--muted)}
+.cat-progress .done{color:var(--green)}
+.pack-group{margin:20px 0}
+.pack-group h3{font-size:18px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.pack-group ul{list-style:none;padding:0;margin:0}
+.pack-item{display:flex;align-items:center;gap:10px;padding:4px 0;border-bottom:1px dashed var(--line)}
+.pack-item label{flex:1;display:flex;align-items:center;gap:10px;font-size:16px;color:var(--ink);min-height:40px;cursor:pointer}
+.pack-item input{width:22px;height:22px;margin:0;accent-color:var(--green);flex:none}
+.pack-item.checked label span{text-decoration:line-through;color:var(--muted)}
+
+.memo{background:#fffdf8;border:1px solid var(--line);border-left:3px solid var(--pink-line);padding:12px 16px;margin:10px 0;border-radius:4px}
+.memo p.body{white-space:pre-wrap;overflow-wrap:anywhere}
+.memo .meta{font-size:12px;color:var(--muted)}
+
+.fx-status{font-size:14px}
+.fx-status.live{color:var(--green)}
+.fx-status.stale,.fx-status.manual{color:var(--rust)}
+.fx-rates{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:10px 0;font-size:15px}
+.fx-rates dt{color:var(--muted)}
+.fx-rates dd{margin:0}
+.fx-form{display:grid;grid-template-columns:2fr 1fr;gap:10px;margin:18px 0 8px}
+.fx-form input{font-size:22px}
+.quick{display:flex;gap:8px;flex-wrap:wrap}
+.quick button{background:var(--pink);color:var(--ink);border-color:var(--pink-line)}
+.fx-out{list-style:none;padding:0;margin:14px 0;display:grid;gap:8px}
+.fx-out li{background:#fffdf8;border:1px solid var(--line);padding:10px 14px;border-radius:4px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.fx-out strong{font-family:"Songti TC",serif;font-size:22px;color:var(--green);font-weight:500}
+.manual{margin:18px 0;border-top:1px solid var(--line);padding-top:10px}
+.manual summary{cursor:pointer;color:var(--green);min-height:44px;display:flex;align-items:center}
+
+footer{padding-top:24px;padding-bottom:40px;border-top:1px solid var(--line);margin-top:40px}
+@media (max-width:520px){h2{font-size:23px}.grid{grid-template-columns:1fr}}
