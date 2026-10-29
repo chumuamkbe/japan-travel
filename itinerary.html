@@ -429,7 +429,7 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
       },
       {
         "time": "16:00–17:40・晚餐預留",
-        "name": "晚餐・店家待選",
+        "name": "待定",
         "note": "先吃飽再逛街；餐廳由你之後挑選，先以池袋西口附近為範圍，實際用餐時間依選店調整。",
         "query": null
       },
@@ -465,7 +465,7 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
       }
     ],
     "notes": [
-      "16:00–17:40保留晚餐時間，餐廳待選；涮乃葉取消。",
+      "16:00–17:40保留晚餐時間，餐廳待定。",
       "LUMINE保留2.5小時、藥妝1.5小時；若前段排隊延誤，縮短散步或略過零碎購物，不延後晚餐。",
       "若林之家只收現金、現場排隊。",
       "Pomme池袋PARCO店21:00閉店，20:30離開LUMINE後直接前往；實際候位影響是否買到。"
@@ -710,7 +710,7 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
     "date": "12/12",
     "week": "六",
     "title": "Day 10",
-    "area": "外苑 → 代代木 → 澀谷 → 銀座",
+    "area": "外苑 → 代代木 → 澀谷 → 銀座 → 新橋",
     "kind": "city",
     "lead": "銀杏拍照、代代木公園野餐與澀谷，銀座安排DOLCE TACUBO與SEAM GINZA。",
     "stops": [
@@ -763,10 +763,16 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
         "query": "GINZA SEAM ONE GINZA"
       },
       {
-        "time": "晚餐・候選",
-        "name": "銀座螃蟹晚餐",
-        "note": "かに道楽銀座八丁目店／日比谷 蟹みつ擇一；尚未預約，依預算與訂位狀況決定。",
-        "query": "銀座 蟹料理"
+        "time": "晚餐・未預約",
+        "name": "かに地獄 新橋",
+        "note": "螃蟹料理改選此店。新橋2-16-1 ニュー新橋ビル；實際報到樓層依訂位確認。想點原味清蒸帝王蟹腳，單點方式、份量、價格與當日供應仍待確認。",
+        "query": "かに地獄 新橋 新橋2-16-1",
+        "resources": [
+          {
+            "label": "指定Google Maps店家",
+            "url": "https://maps.app.goo.gl/v3YUVzA4cWiFqv2B7?g_st=ic"
+          }
+        ]
       }
     ],
     "notes": [
@@ -885,7 +891,7 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
     }
   }
 ]</script><script>
-'use strict';const travelNotes={"1": ["成田取車後直接前往河口湖，連住兩晚。", "紅眼航班後駕駛先確認精神狀態；需要時休息或延後出發。", "取車時確認冬季胎、保險與兩位駕駛登記。"], "2": ["完整一天留在河口湖，下午提早回飯店看景泡湯。", "產屋崎和長崎公園擇一；騎行與咖啡依天氣擇一。", "住宿選明確富士山景觀房；熱海延伸取消。"], "3": ["下午御殿場購物，傍晚回東京。", "還車門市截止時間先確認；週六車流預留緩衝，必要時提早離開Outlet。"], "4": ["週日人潮較多，披薩11:30與teamLab13:30–14:00均未完成預訂。", "teamLab預留約2.5–3小時；看景候位或入場延遲時彈性調整，不保證趕上黃昏窗邊座位。", "冨所隨麻布台同日移到12/6，19:30僅為目標，須確認店家可訂時段。", "Comme’N、鈴懸、%ARABICA以外帶短停為主；DOLCE TACUBO已改12/12銀座店。"], "5": ["16:00–17:40保留晚餐時間，餐廳待選；涮乃葉取消。", "LUMINE保留2.5小時、藥妝1.5小時；若前段排隊延誤，縮短散步或略過零碎購物，不延後晚餐。", "若林之家只收現金、現場排隊。", "Pomme池袋PARCO店21:00閉店，20:30離開LUMINE後直接前往；實際候位影響是否買到。"], "6": ["選定Monster Kart，60分鐘，16:00出發、15:30報到；尚未預訂，兩人名額與費用待確認。", "所貼官網預約頁為原宿店：千馱谷3-61-7，接待處2F；不是先前品川平塚店。", "12/8東京日落16:28，路線與天氣影響夕陽能見度。", "BEAMS CULTUART與LUFTBAUM保留18:00–19:15。", "築地11:00離開；早餐與早午餐合併，DEPOT可略過，保留卡丁車報到時間。"], "10": ["戶外銀杏、野餐依天氣調整；野餐預留2–3小時。", "GINZA SEAM 必去；索取邀請碼辦線上會員。銀座螃蟹晚餐仍待選店／訂位。"]};const base=JSON.parse(document.getElementById('itinerary-data').textContent);let active=1;const nav=document.getElementById('days'),panels=document.getElementById('panels');const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function getDays(){return base}function render(){const days=getDays();nav.innerHTML=days.map(d=>`<button class="daybutton ${d.kind}" data-day="${d.n}" aria-controls="day-${d.n}" aria-pressed="${d.n===active}"><span class="date">${d.date}<small>DAY ${String(d.n).padStart(2,'0')}・週${d.week}</small></span><span class="name">${esc(d.area)}</span></button>`).join('');panels.innerHTML=days.map(d=>`<section id="day-${d.n}" class="detail daypanel" aria-labelledby="title-${d.n}" ><div class="dayhead"><div><div class="eyebrow">${d.date}（${d.week}） · 當日行程</div><h3 id="title-${d.n}">Day ${d.n}</h3><span class="area">${esc(d.area)}</span>${d.kind==='city'?'<br><span class="day-city">東京散步</span>':''}</div><span class="daynumber">${String(d.n).padStart(2,'0')}</span></div><div class="day-summary"><div><strong>天氣</strong><p>${esc(d.weather?.text||'接近出發時更新預報。')}</p><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank" rel="noopener noreferrer">日本氣象廳 ↗</a></div><div><strong>摘要</strong><p>${esc(d.lead)}</p></div></div><ol class="stops">${d.stops.map(s=>`<li class="stop"><div class="time">${esc(s.time)}</div><h4>${esc(s.name)}${s.dateLocked?'<span class="fixed-label">日期固定</span>':''}</h4>${s.payment?`<span class="payment ${s.payment==='cashless_only'?'cashless':''}">${esc(({cash_only:'僅收現金',cashless_only:'僅限無現金付款',cash_and_card:'可刷卡・可付現'})[s.payment]||s.payment)}</span>`:''}<p>${esc(s.name.includes("螃蟹道樂銀座")?"晚餐兩店擇一，尚未預約。":s.note)}</p>${s.query?`<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.query)}" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>`:''}${(s.resources||[]).filter(r=>/^https:\/\//.test(r.url)).map(r=>` <a class="maplink" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a>`).join('')}${s.tabelog?` <a class="maplink" href="${esc(s.tabelog)}" target="_blank" rel="noopener noreferrer">Tabelog ↗</a>`:''}</li>`).join('')}</ol><div class="info"><strong>當天注意事項</strong><ul>${(travelNotes[d.n]||[]).map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div><div class="rain"><strong>天氣與替代安排</strong><p>${esc(d.rain)}</p></div></section>`).join('');nav.querySelectorAll('[data-day]').forEach(b=>b.addEventListener('click',()=>showDay(Number(b.dataset.day),true)))}function markDay(n){if(active===n)return;active=n;for(const b of nav.querySelectorAll('[data-day]')){const selected=Number(b.dataset.day)===n;b.setAttribute('aria-pressed',String(selected));if(selected)b.setAttribute('aria-current','date');else b.removeAttribute('aria-current')}history.replaceState(null,'','#day-'+n);document.getElementById('announcement').textContent='目前查看 '+getDays()[n-1].date+' Day '+n;}
+'use strict';const travelNotes={"1": ["成田取車後直接前往河口湖，連住兩晚。", "紅眼航班後駕駛先確認精神狀態；需要時休息或延後出發。", "取車時確認冬季胎、保險與兩位駕駛登記。"], "2": ["完整一天留在河口湖，下午提早回飯店看景泡湯。", "產屋崎和長崎公園擇一；騎行與咖啡依天氣擇一。", "住宿選明確富士山景觀房；熱海延伸取消。"], "3": ["下午御殿場購物，傍晚回東京。", "還車門市截止時間先確認；週六車流預留緩衝，必要時提早離開Outlet。"], "4": ["週日人潮較多，披薩11:30與teamLab13:30–14:00均未完成預訂。", "teamLab預留約2.5–3小時；看景候位或入場延遲時彈性調整，不保證趕上黃昏窗邊座位。", "冨所隨麻布台同日移到12/6，19:30僅為目標，須確認店家可訂時段。", "Comme’N、鈴懸、%ARABICA以外帶短停為主；DOLCE TACUBO已改12/12銀座店。"], "5": ["16:00–17:40保留晚餐時間，餐廳待定。", "LUMINE保留2.5小時、藥妝1.5小時；若前段排隊延誤，縮短散步或略過零碎購物，不延後晚餐。", "若林之家只收現金、現場排隊。", "Pomme池袋PARCO店21:00閉店，20:30離開LUMINE後直接前往；實際候位影響是否買到。"], "6": ["選定Monster Kart，60分鐘，16:00出發、15:30報到；尚未預訂，兩人名額與費用待確認。", "所貼官網預約頁為原宿店：千馱谷3-61-7，接待處2F；不是先前品川平塚店。", "12/8東京日落16:28，路線與天氣影響夕陽能見度。", "BEAMS CULTUART與LUFTBAUM保留18:00–19:15。", "築地11:00離開；早餐與早午餐合併，DEPOT可略過，保留卡丁車報到時間。"], "10": ["戶外銀杏、野餐依天氣調整；野餐預留2–3小時。", "GINZA SEAM 必去；索取邀請碼辦線上會員。晚餐選かに地獄新橋，尚未預約。"]};const base=JSON.parse(document.getElementById('itinerary-data').textContent);let active=1;const nav=document.getElementById('days'),panels=document.getElementById('panels');const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function getDays(){return base}function render(){const days=getDays();nav.innerHTML=days.map(d=>`<button class="daybutton ${d.kind}" data-day="${d.n}" aria-controls="day-${d.n}" aria-pressed="${d.n===active}"><span class="date">${d.date}<small>DAY ${String(d.n).padStart(2,'0')}・週${d.week}</small></span><span class="name">${esc(d.area)}</span></button>`).join('');panels.innerHTML=days.map(d=>`<section id="day-${d.n}" class="detail daypanel" aria-labelledby="title-${d.n}" ><div class="dayhead"><div><div class="eyebrow">${d.date}（${d.week}） · 當日行程</div><h3 id="title-${d.n}">Day ${d.n}</h3><span class="area">${esc(d.area)}</span>${d.kind==='city'?'<br><span class="day-city">東京散步</span>':''}</div><span class="daynumber">${String(d.n).padStart(2,'0')}</span></div><div class="day-summary"><div><strong>天氣</strong><p>${esc(d.weather?.text||'接近出發時更新預報。')}</p><a href="https://www.jma.go.jp/bosai/forecast/" target="_blank" rel="noopener noreferrer">日本氣象廳 ↗</a></div><div><strong>摘要</strong><p>${esc(d.lead)}</p></div></div><ol class="stops">${d.stops.map(s=>`<li class="stop"><div class="time">${esc(s.time)}</div><h4>${esc(s.name)}${s.dateLocked?'<span class="fixed-label">日期固定</span>':''}</h4>${s.payment?`<span class="payment ${s.payment==='cashless_only'?'cashless':''}">${esc(({cash_only:'僅收現金',cashless_only:'僅限無現金付款',cash_and_card:'可刷卡・可付現'})[s.payment]||s.payment)}</span>`:''}<p>${esc(s.name.includes("螃蟹道樂銀座")?"晚餐兩店擇一，尚未預約。":s.note)}</p>${s.query?`<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.query)}" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>`:''}${(s.resources||[]).filter(r=>/^https:\/\//.test(r.url)).map(r=>` <a class="maplink" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a>`).join('')}${s.tabelog?` <a class="maplink" href="${esc(s.tabelog)}" target="_blank" rel="noopener noreferrer">Tabelog ↗</a>`:''}</li>`).join('')}</ol><div class="info"><strong>當天注意事項</strong><ul>${(travelNotes[d.n]||[]).map(n=>`<li>${esc(n)}</li>`).join('')}</ul></div><div class="rain"><strong>天氣與替代安排</strong><p>${esc(d.rain)}</p></div></section>`).join('');nav.querySelectorAll('[data-day]').forEach(b=>b.addEventListener('click',()=>showDay(Number(b.dataset.day),true)))}function markDay(n){if(active===n)return;active=n;for(const b of nav.querySelectorAll('[data-day]')){const selected=Number(b.dataset.day)===n;b.setAttribute('aria-pressed',String(selected));if(selected)b.setAttribute('aria-current','date');else b.removeAttribute('aria-current')}history.replaceState(null,'','#day-'+n);document.getElementById('announcement').textContent='目前查看 '+getDays()[n-1].date+' Day '+n;}
 let jumpingTo=null,jumpRelease;function releaseJump(){jumpingTo=null;syncVisibleDay()}function showDay(n,scroll){if(!Number.isInteger(n)||n<1||n>base.length)return;markDay(n);if(scroll){jumpingTo=n;clearTimeout(jumpRelease);jumpRelease=setTimeout(releaseJump,1800);}if(scroll)document.getElementById('day-'+n).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});}
 let scrollQueued=false;function syncVisibleDay(){scrollQueued=false;if(jumpingTo!==null)return;const line=matchMedia('(max-width:800px)').matches?155:100;let current=1;for(const panel of panels.children){if(panel.getBoundingClientRect().top<=line)current=Number(panel.id.slice(4));else break;}markDay(current);}window.addEventListener('scroll',()=>{if(!scrollQueued){scrollQueued=true;requestAnimationFrame(syncVisibleDay)}},{passive:true});window.addEventListener('scrollend',()=>{if(jumpingTo!==null){clearTimeout(jumpRelease);releaseJump();}},{passive:true});window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#day-(\d+)$/);if(m)showDay(Number(m[1]),true)});
 document.getElementById('print').addEventListener('click',()=>window.print());render();const initial=location.hash.match(/^#day-(\d+)$/);if(initial){showDay(Number(initial[1]),false);requestAnimationFrame(()=>document.getElementById('day-'+Number(initial[1]))?.scrollIntoView({block:'start',behavior:'instant'}));}
