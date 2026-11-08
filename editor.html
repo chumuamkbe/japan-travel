@@ -15,7 +15,1888 @@ nav.site-nav a:focus-visible{outline:2px solid #5b7167;outline-offset:3px;}
 .site-header .site-brand{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif!important;font-size:20px!important;font-weight:600!important;font-style:normal!important;letter-spacing:.04em!important;line-height:1.5!important;text-decoration:none!important}
 
 .site-header .site-brand{font-family:"Songti TC","Noto Serif TC","PMingLiU",serif!important;font-weight:500!important}h1,h2,h3{font-family:"Songti TC","Noto Serif TC","PMingLiU",serif!important;font-weight:500}
-</style><div class="wrap"><header><div class="site-header"><a class="site-brand" href="itinerary.html">東京之旅</a><nav class="site-nav" aria-label="網站頁面"><a href="itinerary.html">行程</a><a href="collections.html">收藏</a><a href="map.html">地圖</a><a href="tools.html">工具</a></nav></div></header><h1>行程編輯</h1><p class="muted">改時間、調順序，把交通留在兩站之間。東京 2026/12/3–12/13 · 日本當地時間</p><div class="notice"><b>儲存範圍：</b>修改自動存在這台裝置的此瀏覽器，旅伴開同一網址不會同步看到修改。用「匯出行程」傳檔案，再由旅伴匯入；這版沒有多人即時共編。<br><b>交通：</b>可手動填方式、分鐘與路線備註，也能開Google Maps查詢。可編輯路線、行車方向、轉乘與出口。排序後會清空交通分鐘待重查；不會自動呼叫付費地圖API。</div><div class="toolbar"><button id="export" class="primary">匯出行程 JSON</button><button id="import">匯入行程</button><input type="file" id="file" accept=".json,application/json" hidden><button id="undo" disabled>復原上一步</button><button id="reset">重設今日</button><button id="latest">套用最新原版</button><button id="print">列印今日</button></div><div id="status" role="status" aria-live="polite"></div><nav class="days" id="days" aria-label="行程日期"></nav><main id="editor"></main><button id="add" class="primary" style="margin-top:20px">＋ 新增景點</button><div class="footer muted">固定時間會保留，其他時刻依「上一站結束＋交通分鐘」推算。停留或交通沒填時，後續會顯示待補；推算不代表已確認班次、營業時間或預約。跨午夜請另安排下一天。</div></div><script id="seed" type="application/json">[{"n": 1, "date": "12/03", "week": "四", "title": "Day 1", "area": "成田 → 日暮里 → 山中湖", "kind": "富士山", "lead": "06:30抵達成田，搭Skyliner至日暮里取車後往山中湖；先採買晚餐與早餐，16:30入住Forest Cottage L-1，晚上在木屋料理、BBQ或營火。", "stops": [{"time": "06:30", "name": "MM620 抵達成田第1航廈", "note": "12/3（四）02:25自桃園第1航廈起飛，06:30抵達成田第1航廈；時間均為當地時間，依旅客提供訂單。", "query": null}, {"time": "06:30–07:30／08:00・估算", "name": "下機、入境審查、領行李與海關", "note": "以落地後60–90分鐘作規劃，預估07:30–08:00走到入境大廳；不是保證出關時間。遇排隊、行李延遲或航班晚到可能更久。", "query": null}, {"time": "出關後約15–25分鐘・估算", "name": "前往B1京成車站、購票／劃位", "note": "預留走到地下車站、換票或購票與找月台時間；Skyliner搭到日暮里。08:30取車較緊，不預先鎖定趕不上的車次。", "query": "成田空港 第1ターミナル 京成", "resources": [{"label": "京成官方時刻查詢", "url": "https://keisei.ekitan.com/naritaacs-i/timetable"}]}, {"time": "約08:30–09:30抵達・規劃估算", "name": "Skyliner → 日暮里站", "note": "車程先留約40–60分鐘，另加候車；具體12/3班次尚待確認，不把此區間視為已確認車次。若出關特別順利可提早抵達；以現場能搭上的班次為準。", "query": "日暮里駅"}, {"time": "預約08:30・實際可能晚到", "name": "日暮里站前店取車", "note": "租期：2026/12/3 08:30至12/5 20:00。出站找路暫留10–15分鐘、辦手續20–30分鐘，門市地址與步行時間待租車公司確認；若趕不上08:30，提前聯絡門市。確認冬季胎、ETC、保險與第二位駕駛登記。", "query": "日暮里駅 レンタカー"}, {"time": "約09:00–10:15後出發・依取車進度", "name": "日暮里 → 山中湖自駕", "note": "先留約3–4小時含市區出城與途中休息，屬規劃估算，非即時導航；以16:30抵達住宿為目標，塞車時縮短沿途停留。", "query": "日暮里 小田急山中湖フォレストコテージ 自動車"}, {"time": "途中・彈性", "name": "休息站午餐／休息", "note": "依路線安排休息站；駕駛人輪替前先確認都已登記為駕駛。", "query": "中央自動車道 サービスエリア"}, {"time": "14:30–15:30・預留估算", "name": "Ogino 山中湖店採買", "note": "先買晚餐、早餐、草莓、熟食、飲水、調味料與食用油；車程與當日營業時間出發前再核。BBQ食材與營火耗材另購。", "query": "オギノ 山中湖店"}, {"time": "16:30・預計抵達", "name": "小田急山中湖 Forest Cottage｜Leaf Cottage L-1", "note": "已訂12/3入住、12/4退房，2位成人。報到15:00–17:00；現場付款，可刷信用卡。訂單總額¥24,200，含追加車輛¥1,100待向住宿方確認；尚未改為較低金額。", "query": "小田急山中湖フォレストコテージ", "payment": "cash_and_card", "resources": [{"label": "住宿與設備", "url": "stay.html#forest-cottage"}, {"label": "官網", "url": "https://www.odakyu-forest.com/"}]}, {"time": "報到後–18:00・如要使用", "name": "公共浴場／木屋私人淋浴", "note": "公共浴場目前公告15:00–18:00，季節可能調整，以報到說明為準；自備毛巾與盥洗用品，也可使用L-1私人淋浴。", "query": null}, {"time": "18:00–21:00前", "name": "木屋晚餐、BBQ與營火", "note": "有廚房、遮棚露台與戶外設備；食材、調味料、烤網與燃料自備或現場購買。風雨雪時依場方規定改室內料理。21:00後保持安靜、不移動車輛。", "query": null}, {"time": "21:00後・安靜休息", "name": "住宿｜Forest Cottage・Leaf Cottage L-1", "note": "12/3–12/4住山中湖木屋；今晚在園區休息，21:00後禁止車輛進出與移動。隔天10:00前退房。 入住15:00–17:00（預計16:30）；12/4 10:00前退房。", "query": "小田急山中湖フォレストコテージ", "nightlyStay": true, "resources": [{"label": "住宿官網", "url": "https://www.odakyu-forest.com/"}, {"label": "入住／退房規定", "url": "https://www.odakyu-forest.com/"}]}], "notes": ["12/3已訂山中湖Forest Cottage L-1；12/4晚住宿待選，並非兩晚連住河口湖。", "16:30抵達、17:00前完成報到；延誤時先聯絡0555-62-2171。", "自備浴巾、毛巾、牙刷牙膏、洗沐用品與睡衣；BBQ耗材、食材、調味料另備。", "訂單追加車輛¥1,100與租車雪胎是否包含，仍待確認。"], "rain": "雨雪或能見度差時延後出發、縮減沿途停留；必要時取消湖畔散步。", "weather": "出發前查看成田至河口湖沿線天氣、降雪及高速道路公告。"}, {"n": 2, "date": "12/04", "week": "五", "title": "Day 2", "area": "山中湖 → 河口湖 → 箱根", "kind": "富士山", "lead": "山中湖木屋早餐、10:00前退房；河口湖拍照與午餐後，下午自駕前往箱根仙石原，入住箱根リゾートyamaki。", "stops": [{"time": "清晨–09:00", "name": "山中湖私人棧橋看山、木屋早餐", "note": "依天氣步行至園區湖畔棧橋；回木屋早餐、整理廚房與行李，不保證能見度。", "query": null}, {"time": "09:00–10:00", "name": "整理、10:00前退房", "note": "L-1退房截止10:00，冬季不安排延遲退房；清理料理與營火區，依場方指示完成退房。", "query": null}, {"time": "10:00–11:00・預留估算", "name": "山中湖 → 河口湖北岸", "note": "先留約1小時車程與停車緩衝，非導航實測；雨雪路況視當日調整。", "query": "山中湖 大石公園 自動車"}, {"time": "11:00–12:00", "name": "大石公園、湖畔拍照", "note": "留約1小時看山、拍照與散步。12月以湖景和富士山為主，不安排夏季花田體驗；能見度依天氣。", "query": "大石公園 河口湖", "resources": [{"label": "官方資訊", "url": "https://www.town.fujikawaguchiko.yamanashi.jp/ka/info.php?if_id=2346"}]}, {"time": "12:00–13:00", "name": "湖區午餐", "note": "以北岸或Hana Terrace周邊正餐為主，餐廳依營業日與候位選擇；先留一小時，不為吃飯跨區。", "query": "河口湖 大石公園 ランチ"}, {"time": "13:00–14:00・擇一短停", "name": "湖畔電動輔助自行車／Hana Terrace 咖啡", "note": "湖畔短程騎行或Hana Terrace咖啡擇一，14:00前收尾前往箱根；租車借還及天候不合時直接選咖啡。", "query": "富士大石ハナテラス", "resources": [{"label": "Hana Terrace", "url": "https://www.fujioishihanaterasu.com/"}, {"label": "DouDouBear", "url": "https://www.ddbear.jp/"}]}, {"time": "14:00–16:00・移動估算", "name": "河口湖 → 箱根仙石原", "note": "自駕先預留約2小時含停車及休息，非實測導航；雨雪、結冰或塞車時提早離開河口湖。住宿最晚報到時間須依訂單確認。", "query": "大石公園 箱根リゾートyamaki 自動車"}, {"time": "約16:00・暫估", "name": "入住箱根 リゾート yamaki", "note": "已確認12/4入住、12/5退房；地址神奈川縣足柄下郡箱根町仙石原474。房型、入住截止、餐食、退房與付款依訂單，抵達時間暫估。 12/4–12/5住箱根仙石原；晚餐後回住宿休息。入住、退房時間及餐食依訂單確認。 入住15:00–20:00；12/5 10:00前退房。", "query": "箱根 リゾート yamaki 仙石原474", "resources": [{"label": "官網", "url": "https://hakone-resort-yamaki.com/"}, {"label": "指定地圖", "url": "https://maps.app.goo.gl/EicdriZHNRHGvbN17"}, {"label": "住宿官網", "url": "https://hakone-resort-yamaki.com/"}, {"label": "入住／退房規定", "url": "https://hakone-resort-yamaki.com/faq.php"}], "nightlyStay": true}], "notes": ["12/4第二晚已確認箱根リゾートyamaki，不住河口湖。", "河口湖14:00前收尾，保留前往箱根的交通時間；入住15:00–20:00，隔日10:00前退房。", "12/5從箱根前往御殿場，20:00前日暮里還車。", "住宿退房：10:00前完成。"], "rain": "雨雪或路面結冰時縮短河口湖停留、取消騎行；以當日道路公告及入住截止安排前往箱根，不再隔天折返河口湖補拍。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布；出發前查看富士山能見度、湖畔風勢及道路結冰。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 3, "date": "12/05", "week": "六", "title": "Day 3", "area": "箱根 → 御殿場 → 日暮里", "kind": "富士山", "lead": "箱根yamaki早餐退房後逛御殿場；15:30左右離場，20:00前日暮里還車，入住LIO HOTEL Tokyo Nippori。", "stops": [{"time": "08:00–10:00・依飯店餐期與退房時間", "name": "箱根yamaki早餐、退房", "note": "早餐供應與退房截止以已訂方案為準，未取得訂單細節；不再安排河口湖補拍。", "query": "箱根 リゾート yamaki"}, {"time": "約10:30–12:00・預留估算", "name": "箱根仙石原 → 御殿場 Premium Outlets", "note": "先保留原10:30–12:00交通緩衝，實際車程依冬季路況、停車及導航更新；出發地改箱根，不再從河口湖出發。", "query": "箱根 仙石原 御殿場プレミアムアウトレット 自動車", "resources": [{"label": "官方自駕交通", "url": "https://www.premiumoutlets.co.jp/gotemba/access/index.html"}]}, {"time": "12:00–15:30・含午餐", "name": "御殿場 Premium Outlets", "note": "約3.5小時用餐與購物，先逛優先品牌；為12/5 20:00還車提早離場，遇高速塞車再提前。", "query": "御殿場プレミアムアウトレット", "resources": [{"label": "官方店鋪名錄", "url": "https://www.premiumoutlets.co.jp/en/gotemba/brands/shop_name.html"}]}, {"time": "15:30–19:30・預留估算", "name": "御殿場 → 日暮里、加油還車", "note": "租車預約20:00結束，目標19:30前回日暮里站前店完成加油與還車準備。約4小時含週六車流、休息、加油及市區緩衝，非導航實測；當天依路況提前離開Outlet。還車門市以訂單確認。", "query": "御殿場 日暮里 自動車"}, {"time": "抵達後", "name": "入住 LIO HOTEL Tokyo Nippori", "note": "已確認12/5–12/9共4晚。還車後前往住宿，晚到報到與房型依訂單；不另安排固定活動。 12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。", "query": "LIO HOTEL Tokyo Nippori", "resources": [{"label": "住宿頁", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"}, {"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"}], "nightlyStay": true}], "notes": ["12/5從箱根退房前往御殿場，再回日暮里還車並入住LIO。", "御殿場品牌清單已列採購頁。午餐包含在購物時段，不另外跨區用餐。", "所有開車時段為預留估算；以最終租車門市、飯店、還車截止與出發前導航結果調整。", "東京市區採買保留12/12，不因Outlet回程較晚再加排夜間購物。", "住宿退房：10:00前完成。"], "rain": "雨雪或高速路況不佳時提早離開箱根、縮短Outlet，以準時還車為主。", "weather": {"status": "forecast_pending", "text": "出發前確認箱根至御殿場及回東京沿線天氣、道路公告。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 4, "date": "12/06", "week": "日", "title": "Day 4", "area": "新宿 → 麻布台 → 新橋", "kind": "city", "lead": "09:00新宿編髮，麻布台披薩、teamLab、黃昏看景與市集；晚餐前往新橋。", "stops": [{"time": "08:15出門 → 約08:45抵達", "name": "LIO HOTEL Tokyo Nippori → ARIES 新宿東南口店", "note": "依旅客提供的Google Maps查詢時間約30分鐘；預計08:45到店，09:00編髮，保留15分鐘報到與溝通。交通時間為旅客提供，非即時班次。", "query": "アリエス 新宿東南口店 新宿4-1-6"}, {"time": "09:00–09:30・預計預約", "name": "ARIES 新宿東南口店・綁髮", "note": "編髮預留30分鐘，09:00為預計預約時間，尚未確認訂位。08:45左右抵達，留15分鐘報到與溝通。東京都新宿區新宿4-1-6 田畑ビル2F；假日基本編髮¥3,000，指名及特殊造型另計。實際完成時間依店家安排。", "query": "Aries 新宿東南口店 新宿4-1-6 田畑ビル2F", "bookingStatus": "planned_not_booked", "resources": [{"label": "官網／價目", "url": "https://aries-cosmetology.com/aries_new_south/"}, {"label": "預約頁", "url": "https://beauty.hotpepper.jp/slnH000410928/"}]}, {"time": "約09:45–10:35", "name": "新宿 → 麻布台之丘", "note": "依旅客提供的Google Maps查詢時間，髮廊至麻布台約50分鐘；完成編髮後保留15分鐘整理與離店緩衝，約10:35抵達，再步行確認餐廳位置，11:30午餐。當日依實際班次調整。", "query": "新宿駅 麻布台ヒルズ RistoPizza"}, {"time": "11:30–13:00・依預約確認", "name": "RistoPizza by Napoli sta ca 麻布台 Hills 店", "note": "Tower Plaza 3F，披薩午餐目標11:30；依預約確認信時段。午餐預算參考¥3,200–6,000／人，並非套餐報價。", "query": "RistoPizza by Napoli sta ca 麻布台ヒルズ", "resources": [{"label": "店家官網", "url": "https://napolistaca.jp/ristopizza/restaurant.html"}, {"label": "官方預約", "url": "https://www.tablecheck.com/ja/shops/ristopizzabynapolistaca/reserve"}, {"label": "館方資訊", "url": "https://www.azabudai-hills.com/shop_list/0029.html"}]}, {"time": "13:00–13:30", "name": "餐廳 → teamLab", "note": "園區內步行至Garden Plaza B B1，預留找路、洗手間與入場時間。外帶購物有餘裕再安排。", "query": "teamLab Borderless 麻布台"}, {"time": "13:00–13:30之間・擇一短停", "name": "Comme’N TOKYO 麻布台 Hills 店", "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Garden Plaza C B1，買喜歡的麵包外帶，不在這裡再吃一餐；官網常態08:00–20:00、全年無休（2026/10/29查）。", "query": "Comme'N TOKYO 麻布台ヒルズ店", "tabelog": "https://tabelog.com/tokyo/A1307/A130701/13294775/", "resources": [{"label": "官方店鋪資訊", "url": "https://commen.jp/shop_list/"}]}, {"time": "13:00–13:30之間・擇一短停", "name": "鈴懸 麻布台 Hills 店", "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Garden Plaza C B1，和菓子外帶；官網常態11:00–20:00，店休1/1、1/2（2026/10/29查）。品項與保存方式依店家。", "query": "鈴懸 麻布台ヒルズ店", "tabelog": "https://tabelog.com/tokyo/A1307/A130704/13291768/", "resources": [{"label": "官網", "url": "https://www.suzukake.co.jp/shops/azabudai"}]}, {"time": "13:00–13:30之間・擇一短停", "name": "%ARABICA 麻布台 Hills 4F", "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Tower Plaza 4F，披薩後順上樓買咖啡；官網常態11:00–20:00，館方消費參考¥550–1,000／人（2026/10/29查）。", "query": "アラビカ東京 麻布台ヒルズ4F店", "tabelog": "https://tabelog.com/tokyo/A1307/A130701/13291787/", "resources": [{"label": "館方資訊", "url": "https://www.azabudai-hills.com/shop_list/0077.html"}]}, {"time": "13:30–14:00 入場", "name": "teamLab Borderless", "note": "選定入場時段13:30–14:00，依票券確認；不是只參觀半小時。預留約2.5–3小時，若14:00才入場，看景時間相應縮短。", "query": "teamLab Borderless 麻布台", "dateLocked": true, "bookingStatus": "planned_not_booked"}, {"time": "約16:15–17:00・含候位", "name": "Sky Room Cafe & Bar 看黃昏", "note": "傍晚看景；34F餐飲空間，非免費展望台。須依當日開放與候位安排，無法保證窗邊座位；若teamLab較晚入場或上樓候位較久，不催促參觀，以現場調整。", "query": "Hills House Sky Room Cafe Bar"}, {"time": "17:00–18:30", "name": "麻布台聖誕市集", "note": "麻布台之丘中央廣場（Arena及草坪區）；2026官方公告11/21–12/25，11:00–21:00。看景後下樓逛市集。", "query": "麻布台ヒルズ 中央広場", "resources": [{"label": "官方活動", "url": "https://www.azabudai-hills.com/sp/christmashills/"}]}, {"time": "18:30–19:00・交通預留", "name": "麻布台 → 新橋", "note": "依你提供的Google Maps，自行車騎乘約10分鐘；加上找車、取還車與步行先留20–30分鐘。共享車以App當下車輛、可還站點為準；無車改步行約31分鐘，雨天改搭車。", "query": "麻布台ヒルズ かに地獄 新橋"}, {"time": "19:00–20:30・未預約", "name": "かに地獄 新橋", "note": "螃蟹料理改選此店。新橋2-16-1 ニュー新橋ビル；實際報到樓層依訂位確認。想點原味清蒸帝王蟹腳，單點方式、份量、價格與當日供應仍待確認。", "query": "かに地獄 新橋 新橋2-16-1", "resources": [{"label": "指定Google Maps店家", "url": "https://maps.app.goo.gl/v3YUVzA4cWiFqv2B7?g_st=ic"}]}, {"time": "晚間・行程結束後", "name": "返回住宿｜LIO HOTEL Tokyo Nippori", "note": "12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。", "query": "LIO HOTEL Tokyo Nippori", "nightlyStay": true, "resources": [{"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"}]}], "notes": ["ARIES 09:00仍為預計預約時間；08:15從LIO出門。", "披薩11:30、teamLab13:30–14:00入場時段維持；訂位及票券以確認信為準。", "Comme’N、鈴懸、%ARABICA擇一外帶；先確保teamLab入場時間。", "冨所已改12/7 18:00；本日晚餐為新橋螃蟹。"], "rain": "teamLab依票券；雨天縮短戶外市集，看景依能見度與候位調整。保留晚餐交通時間。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 5, "date": "12/07", "week": "一", "title": "Day 5", "area": "築地 → 東京站 → 銀座 → 御成門", "kind": "city", "lead": "築地早午餐，東京站伴手禮與DEPOT；銀座SEAM、GINZA SIX及甜點，18:00冨所。", "stops": [{"time": "08:30–10:15", "name": "築地場外市場・早餐與早午餐", "note": "早餐、早午餐擇一主餐搭小吃：牡蠣と貝（鹽味貝拉麵／濃厚牡蠣沾麵）；Marukita（鮪魚拼盤、臉頰肉、鱈場蟹）；鮨國（全海膽蓋飯）；WAGYU JYUJYU（想吃8L蒸帝王蟹腳，供應待核）；山長（明太子玉子燒）。以上想吃品項為使用者筆記，非保證供應。長谷川豬排11:30才開始午餐，與本次11:00離開築地不合，保留收藏，不硬塞。", "query": "築地場外市場", "resources": [{"label": "築地收藏與推薦品項", "url": "https://chumuamkbe.github.io/japan-travel/collections.html#saved-card-13"}, {"label": "場外市場官網", "url": "https://www.tsukiji.or.jp/"}, {"label": "鮨國店頁", "url": "https://www.tsukiji.or.jp/shoplist/cat-d/cat-13/588/"}]}, {"time": "10:15–10:45・含候位", "name": "築地そらつき（Soratsuki）", "note": "草莓大福、霜淇淋短停；築地4-11-10。官網常態08:00–15:00、不定休（2026/10/30查）；當日口味與霜淇淋供應依現場。11:00前離開築地前往東京站。", "query": "築地そらつき 総本店 築地4-11-10", "tabelog": "https://tabelog.com/tokyo/A1313/A131301/13180099/", "resources": [{"label": "官網", "url": "https://soratsuki.jp/access.html"}]}, {"time": "10:45–11:25・移動預留", "name": "築地 → 東京站", "note": "預留40分鐘含乘車、步行與找路，依當日班次更新。", "query": "築地 東京駅 乗換"}, {"time": "11:25–11:55・30分鐘", "name": "喫茶店に恋して。東京駅グランスタ店", "note": "東京站B1銀の鈴附近、JR改札內伴手禮店；停留約半小時，先買伴手禮。不是座位咖啡廳；進站方式依當日交通安排。", "query": "喫茶店に恋して。東京駅グランスタ店"}, {"time": "11:55–12:15", "name": "砂糖樹・東京站大丸", "note": "前往大丸東京1F購買シュガーバターの木；和前一站分處改札內外，保留出站與找店時間。", "query": "シュガーバターの木 大丸東京店", "resources": [{"label": "官方資訊", "url": "https://www.sugarbuttertree.jp/"}]}, {"time": "12:15–13:00・彈性短停", "name": "DEPOT", "note": "東京站B1改札外，作為咖啡／布丁短停；不需久留，布丁供應依現場。", "query": "DEPOT 東京駅 グランスタ B1", "tabelog": "https://tabelog.com/tw/tokyo/A1302/A130201/13249428/", "payment": "可刷卡・交通IC"}, {"time": "13:00–13:40・移動預留", "name": "東京站 → 銀座", "note": "前往銀座；午餐若築地沒吃飽，先在東京站用餐，DEPOT可略過。", "query": "銀座駅"}, {"time": "13:40–14:30", "name": "GINZA SEAM", "note": "必去採購：BYKARTE／Aujua，詢問試用包並記得索取邀請碼辦線上會員。東京都中央区銀座1-8-19 ONE GINZA 3F；出發前再核營業時間與商品庫存。", "query": "GINZA SEAM ONE GINZA"}, {"time": "14:30–16:00・含休息", "name": "GINZA SIX 逛街＋MARLOWE 布丁", "note": "逛街約2小時，另留買布丁與休息時間。MARLOWE位於B2F、僅外帶，常態營業10:30–20:30、公休依館方；布丁需冷藏，購買時確認保冷方式與攜帶時間（2026/11/6查）。", "query": "マーロウ GINZA SIX店 銀座6-10-1", "resources": [{"label": "MARLOWE 官網", "url": "https://www.marlowe.co.jp/shop/ginza-six/"}, {"label": "GINZA SIX 營業時間", "url": "https://ginza6.tokyo/hours/"}]}, {"time": "16:00–16:30", "name": "DOLCE TACUBO GINZA", "note": "甜點停留約30分鐘，與SEAM GINZA安排同一天。銀座7-11-14 GINZAカムイビル1F；官網常態11:00–19:00、無定休（2026/10/29查）。分店品項與現貨依當日供應。", "query": "DOLCE TACUBO GINZA 銀座7-11-14", "resources": [{"label": "品牌官網", "url": "https://d-tacubo.com/"}]}, {"time": "16:30–17:45・含提前到店", "name": "銀座 → 御成門・冨所", "note": "交通與找路預留充裕時間，17:45前到店，依預約確認信報到。", "query": "冨所 新橋6-13-3"}, {"time": "18:00・已訂位", "name": "冨所 Tomidokoro", "note": "18:00已訂位；用餐長度與套餐金額依你的預約確認信，先預留約2小時。", "query": "冨所 新橋6-13-3", "tabelog": "https://tabelog.com/tw/tokyo/A1314/A131401/13223846/", "bookingStatus": "confirmed"}, {"time": "晚餐後", "name": "返回住宿｜LIO HOTEL Tokyo Nippori", "note": "藥妝採買約22:30結束，依住宿位置與體力提早收尾。 12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。", "query": "LIO HOTEL Tokyo Nippori", "nightlyStay": true, "resources": [{"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"}]}], "notes": ["冨所18:00已訂位，保留提前15分鐘到店。", "喫茶店に恋して。停留30分鐘；砂糖樹在大丸東京1F。", "SEAM記得索取邀請碼辦線上會員。", "DOLCE TACUBO銀座為甜點；MARLOWE擇一，冷藏商品購買前確認保冷。"], "rain": "以市場、東京站和銀座室內商場為主；下雨保留前往冨所的交通緩衝。", "weather": "出發前確認原宿與池袋天氣；室內商場與藥妝可照常安排。"}, {"n": 6, "date": "12/08", "week": "二", "title": "Day 6", "area": "原宿 → 澀谷 → 高輪", "kind": "city", "lead": "若林之家後前往澀谷，午餐極味や、寶可夢中心、Kenyan奶茶與隱眼採買；晚間逛高輪。", "stops": [{"time": "08:30出門", "name": "LIO → 原宿", "note": "早上預留交通與早餐；若林之家實際營業及現場候位以店家公告為準。", "query": "原宿駅"}, {"time": "10:45到店・現場排隊", "name": "若林の家（Otters Family）現場排隊", "note": "不能預訂、只收現金（付款方式採旅客確認）。希望體驗約一小時，現行一般方案為25／50分；先以50分為偏好，擁擠時可能只接25分，排隊和入店時間不保證。", "query": "若林の家 カワウソ 神宮前1-6-8", "payment": "cash_only"}, {"time": "約12:15–13:00・含途中採買", "name": "原宿 → 神宮前 → 澀谷", "note": "水獺希望體驗約50分鐘，另留排隊；時間延誤先吃午餐，縮短零碎購物。", "query": "渋谷PARCO"}, {"time": "前往澀谷途中・約15–20分鐘", "name": "ヘッドコンシェルジュ 神宮前店｜商品採買", "note": "只買商品，短停後前往澀谷午餐；商品庫存與是否需先聯絡依店家確認。神宮前6-23-1 第28SYビル，官網常態10:00–23:00（2026/11/8查）。", "query": "ヘッドコンシェルジュ 神宮前店 神宮前6-23-1", "resources": [{"label": "官網", "url": "https://headconcierge.jp/shop/jingumae/"}]}, {"time": "13:00–14:15・含候位", "name": "極味や 渋谷PARCO店", "note": "收藏中的漢堡排店，PARCO B1；12/8週二常態11:30–23:00，LO22:00（2026/11/8官方查）。和寶可夢同棟最方便；若排隊超過可接受時間，改渋谷げんかつ，實際營業依店頁。", "query": "極味や 渋谷PARCO", "resources": [{"label": "官方資訊", "url": "https://shibuya.parco.jp/shop/detail/?cd=025733"}, {"label": "豬排備選｜渋谷げんかつ", "url": "https://tabelog.com/tokyo/A1303/A130301/13257081/"}]}, {"time": "14:15–15:00", "name": "寶可夢中心 澀谷", "note": "PARCO 6F；官方常態10:00–21:00，JR澀谷站步行5分鐘（官方標示，2026/11/8查）。熱門活動可能管制入場。", "query": "ポケモンセンターシブヤ", "resources": [{"label": "官方資訊", "url": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-shibuya/"}]}, {"time": "15:00–15:45", "name": "Kenyan 澀谷奶茶", "note": "你收藏的奶茶店，神南1-14-8；作為下午休息，不另外加一間甜點店。當日營業出發前再核。", "query": "ケニヤン 渋谷 神南1-14-8", "resources": [{"label": "官方資訊", "url": "https://www.kenyan.co.jp/"}]}, {"time": "16:00–16:45", "name": "HOTEL LOVERS 澀谷109店・隱形眼鏡", "note": "隱眼留在澀谷購買；帶上需要的度數、BC、DIA資料，商品與購買條件現場確認。", "query": "HOTEL LOVERS 渋谷109"}, {"time": "16:45–18:15・含交通與晚餐", "name": "澀谷 → 高輪・晚餐", "note": "先吃晚餐再逛高輪；餐廳待定，交通含步行與找路暫留45分鐘，其餘時間用餐。", "query": "高輪ゲートウェイ駅"}, {"time": "18:15–19:30・先BEAMS再LUFTBAUM", "name": "BEAMS CULTUART＋LUFTBAUM", "note": "同一棟NEWoMan高輪North：BEAMS在4F（常態11–20），空中花園在28–29F（整區常態8–24，各區不同）。先逛店再上樓看夜景，指定日開放、電梯等候與活動限制出發前再核。", "query": "NEWoMan 高輪 BEAMS CULTUART LUFTBAUM"}, {"time": "晚間・行程結束後", "name": "返回住宿｜LIO HOTEL Tokyo Nippori", "note": "12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。隔天出發野澤，留時間整理行李。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。", "query": "LIO HOTEL Tokyo Nippori", "nightlyStay": true, "resources": [{"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"}]}], "notes": ["若林之家現場排隊、僅收現金；體驗時長依當天方案。", "極味や午餐，渋谷げんかつ作備選；Kenyan下午奶茶。", "BEAMS 4F常態20:00關店，先逛店再到LUFTBAUM 28–29F。", "隔天出發野澤，晚上回LIO整理行李。"], "rain": "原宿戶外移動縮短；澀谷PARCO與高輪可室內逛街，水獺依現場候位。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 7, "date": "12/09", "week": "三", "title": "Day 7", "area": "東京 → 野澤溫泉", "kind": "snow", "lead": "四人會合取車，前往野澤。", "stops": [{"time": "早上・已定方向", "name": "退房、4 人會合、取車出發", "note": "取車門市、時間、車款與行程路線未定。", "query": null}, {"time": "移動中", "name": "東京 → 野澤溫泉", "note": "當天路況及停靠點待定，不把河口湖串進這一天。", "query": "野沢温泉"}, {"time": "抵達後", "name": "依已排好的住宿／教練安排", "note": "使用者已安排相關項目；本頁未取得細節，不另編滑雪課時。", "query": null}, {"time": "晚間・行程結束後", "name": "返回住宿｜野澤溫泉住宿", "note": "12/9–12/11住宿已安排，名稱尚未提供；當晚回既有住宿休息，地址及返程待補。 入住／退房時間：待住宿名稱或訂單補充。", "query": null, "nightlyStay": true}], "notes": ["12/9–12/11 三天費用不納入東京預算評估。", "冬季道路、租車裝備與還車條件，等租車方案確定後核對。", "住宿退房：11:00前完成。"], "rain": "以路況、雪場與已安排課程的實際公告調整。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 8, "date": "12/10", "week": "四", "title": "Day 8", "area": "野澤溫泉", "kind": "snow", "lead": "野澤滑雪，依教練與雪場安排。", "stops": [{"time": "白天", "name": "滑雪／既有課程", "note": "實際雪場開放、雪況與課程內容待出發前核對。", "query": "野沢温泉スキー場"}, {"time": "晚上", "name": "休息、溫泉或附近用餐", "note": "僅列彈性方向，店家及設施未指定。", "query": null}, {"time": "晚間・行程結束後", "name": "返回住宿｜野澤溫泉住宿", "note": "12/9–12/11住宿已安排，名稱尚未提供；當晚回既有住宿休息，地址及返程待補。 入住／退房時間：待住宿名稱或訂單補充。", "query": null, "nightlyStay": true}], "notes": ["12 月初雪況與可開放雪道不作保證，出發前看雪場官方公告。"], "rain": "依雪場與教練安排調整，本頁不擅自更動既有預訂。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 9, "date": "12/11", "week": "五", "title": "Day 9", "area": "野澤溫泉 → 東京", "kind": "snow", "lead": "野澤滑雪，最晚16:30還器材，再回東京。", "stops": [{"time": "上午至下午", "name": "依既有安排滑雪", "note": "是否提早結束，依當天課程與回程規劃。", "query": null}, {"time": "最晚 16:30・已知限制", "name": "歸還滑雪器材", "note": "這是使用者提供的最晚歸還時間，可以提早。", "query": null}, {"time": "還器材後", "name": "開車回東京", "note": "行車、休息與路況時間尚未實算，可能晚上才抵達。", "query": null}, {"time": "回城後", "name": "入住 Japan House Sugamo、簡單晚餐", "note": "已確認12/11–12/13共2晚；野澤回程可能晚到，提前向住宿確認入住指示與最晚報到時間。 12/11–12/13連住2晚，地址東京都豐島區巢鴨3-2-15。行程結束後返回住宿；交通依當天最後停留地點與班次安排，尚未實算。野澤回程可能晚到，須提前確認入住方式。 入住15:00–00:00；12/13 11:00前退房。須預先告知抵達時間，野澤返東京當晚留意入住截止。", "query": "Japan House Sugamo 巣鴨3-2-15", "resources": [{"label": "住宿頁", "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"}, {"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.en-gb.html"}], "nightlyStay": true}], "notes": ["還車門市及營業截止時間必須先確認；不能假設晚上到東京一定能還車。", "東京住宿已確認Japan House Sugamo；須確認野澤回程晚到的入住方式。"], "rain": "雪況或道路狀況造成延遲時，以回城與休息為主。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}, {"n": 10, "date": "12/12", "week": "六", "title": "Day 10", "area": "外苑 → 代代木 → 池袋", "kind": "city", "lead": "外苑銀杏與代代木野餐，回住宿放用品；下午池袋先OS Drug，晚餐後繼續採買。", "stops": [{"time": "08:30–09:30・1小時", "name": "明治神宮外苑銀杏拍照", "note": "預留約1小時自行拍照；葉況受當年氣候影響。", "query": "明治神宮外苑 イチョウ並木"}, {"time": "09:30–10:30・含交通與採買", "name": "代代木公園野餐採買", "note": "沿路購買午餐與飲料，垃圾自行帶走。", "query": "代々木公園 近く テイクアウト"}, {"time": "10:30–13:00・2.5小時", "name": "代代木公園野餐", "note": "依天氣保留2–3小時；下雨改室內用餐／咖啡。", "query": "代々木公園"}, {"time": "13:00–14:30・交通與休息", "name": "回Japan House Sugamo放野餐用品 → 池袋", "note": "先回住宿放用品，再前往池袋；依你查詢，住宿至池袋門到門約24分鐘，班次以當日為準。", "query": "Japan House Sugamo"}, {"time": "14:30–15:15", "name": "OS Drug 池袋店", "note": "本次第一間藥妝採買，先準備現金。西池袋1-1-30池袋西口地下街；常態10:00–19:45，出發前核對門市公告。", "query": "オーエスドラッグ 池袋店", "resources": [{"label": "官方資訊", "url": "https://www.osdrug.com/sub1.htm"}]}, {"time": "15:15–16:15", "name": "mont-bell 池袋東武店", "note": "先逛較早關門的東武店；東武百貨5F，常態10:00–19:00，臨時調整依館方。", "query": "モンベル 池袋東武店", "resources": [{"label": "官方資訊", "url": "https://store.montbell.jp/search/shopinfo/?shop_no=678596"}]}, {"time": "16:15–17:00", "name": "Onitsuka Tiger 池袋PARCO店", "note": "池袋PARCO本館2F，南池袋1-28-2；常態11:00–21:00，電話03-5396-1320（2026/10/30官網查）。預留45分鐘挑款試鞋，15:45離店前往晚餐；SENSE、DAISO零碎短停先略過。", "query": "Onitsuka Tiger 池袋パルコ 南池袋1-28-2", "resources": [{"label": "官方店家資訊", "url": "https://ikebukuro.parco.jp/shop/detail/?cd=031507"}]}, {"time": "17:00–18:00", "name": "晚餐｜待定", "note": "先吃飽再繼續逛，餐廳留待挑選。", "query": null}, {"time": "18:00–18:30", "name": "Pomme d’Amour Tokyo 池袋 PARCO 店", "note": "想吃的蘋果糖；池袋PARCO本館B2，官網常態11:00–21:00（2026/10/29查）。離開LUMINE後穿越車站前往，再接東口藥妝。 21:00閉店，先直接前往；遇排隊或移動延誤不保證買到。", "query": "ポムダムールトーキョー 池袋パルコ店 南池袋1-28-2", "resources": [{"label": "官網", "url": "https://www.pommedamourtokyo.com/locations"}]}, {"time": "18:30–20:00・1.5小時", "name": "SUNDRUG 池袋東口駅前店", "note": "藥妝以SUNDRUG為主；彩妝有需要再看附近松本清。營業與庫存依當日門市。", "query": "サンドラッグ 池袋東口駅前店 東池袋1-3-5", "resources": [{"label": "官方資訊", "url": "https://sundrug-online.com/tools/locations/cities/toshima"}]}, {"time": "20:00前後・有餘裕再逛", "name": "3COINS+plus／DAISO", "note": "依剩餘體力與當日關店時間擇一；不另外前往新宿購物。", "query": "3COINS plus 池袋"}, {"time": "晚間・行程結束後", "name": "返回住宿｜Japan House Sugamo", "note": "12/11–12/13連住2晚，地址東京都豐島區巢鴨3-2-15。行程結束後返回住宿；交通依當天最後停留地點與班次安排，尚未實算。 入住15:00–00:00；12/13 11:00前退房。須預先告知抵達時間，野澤返東京當晚留意入住截止。", "query": "Japan House Sugamo 巣鴨3-2-15", "nightlyStay": true, "resources": [{"label": "住宿資訊", "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"}, {"label": "入住／退房規定", "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.en-gb.html"}]}], "notes": ["OS Drug先逛，接著mont-bell與Onitsuka Tiger；SUNDRUG為主要藥妝採買。", "野餐用品先放回住宿，晚上不帶著逛街。", "晚餐保留17:00–18:00，餐廳待定。", "銀杏與野餐依天氣調整，購物可提早開始。"], "rain": "下雨取消野餐、改室內午餐並提早池袋購物；銀杏視雨勢與葉況縮短。", "weather": "出發前更新外苑葉況、降雨與風勢；野餐日注意低溫。"}, {"n": 11, "date": "12/13", "week": "日", "title": "Day 11", "area": "東京大學本鄉 → 秋葉原 → 上野 → 機場", "kind": "city", "lead": "東大與午餐後，秋葉原輕鬆短逛、上野買可麗露；15:15起取行李，搭Skyliner前往成田。", "stops": [{"time": "約08:30出門・退房依飯店安排", "name": "退房、處理行李", "note": "從Japan House Sugamo退房；行李寄放尚未確認，可先查上野寄物設施，勿假設住宿提供寄放。", "query": null}, {"time": "目標09:00–11:00・保留1.5–2小時", "name": "東京大學本鄉校區慢逛", "note": "安田講堂外觀、銀杏大道與三四郎池周邊作候選，以校內當天開放動線為準。12/13葉況未定，不保證仍滿樹銀杏。", "query": "東京大学 本郷キャンパス"}, {"time": "11:00–12:30・含移動彈性", "name": "就近午餐", "note": "餐廳未指定；不額外跨區去根津Yukikage。", "query": null}, {"time": "12:30–13:00・移動估算", "name": "本鄉／午餐地點 → 秋葉原", "note": "依東大離校出口與午餐位置選交通；先預留30分鐘，住宿與餐廳確定後再補乘換。", "query": "東京大学 本郷 秋葉原"}, {"time": "13:00–14:15・輕鬆短逛", "name": "秋葉原短逛、MILK SHOP 酪", "note": "補你收藏的牛乳小店；位於JR秋葉原站改札內、中央總武線千葉方向6號月台。需使用有效乘車券或入場券進站；若不順路就略過。附近遊戲機／扭蛋可隨興看看，最多留約1小時，不安排長段散步。營業與庫存出發前確認。", "query": "MILK SHOP 酪 秋葉原 6番ホーム"}, {"time": "14:15–14:45・移動估算", "name": "秋葉原 → 上野", "note": "預留乘車、找店與站內步行時間；前往JR上野站改札內的ecute。", "query": "秋葉原 上野 JR"}, {"time": "14:45–15:15", "name": "KURAMAE CANNELÉ ecute 上野店", "note": "補收藏的可麗露，改在上野分店外帶，不另繞藏前。JR上野站改札內；官網週末09:00–21:00（2026/10/29查）。目前藏前咖啡廳休業；購買後不安排內用候位。", "query": "KURAMAE CANNELE エキュート上野", "resources": [{"label": "官方分店資訊", "url": "https://www.kuramae-cannele.jp/shops/index.html"}]}, {"time": "15:15–16:45・依住宿調整", "name": "取行李、回到京成上野", "note": "由巢鴨住宿退房，早上先決定寄物位置。若寄在住宿，下午須回巢鴨取件再前往日暮里／上野；優先確認上野寄物選項以減少折返，未保證有空櫃。", "query": "京成上野駅"}, {"time": "目標16:50抵達車站", "name": "京成上野候車", "note": "取票、洗手間、走到月台，保留約30分鐘候車餘裕。", "query": "京成上野駅 スカイライナー"}, {"time": "目標17:20上野發車", "name": "Skyliner → 成田T1", "note": "現行週日時刻：上野17:20／日暮里17:25→T1 18:03。12/13班次與座位待再核；勿在T2提前下車。", "query": null}, {"time": "約18:20起", "name": "退稅出境確認、晚餐、等候報到", "note": "2026/11起日本改退稅新制，需先做海關確認再託運，留45–60分鐘規劃緩衝。Peach成田國際線目前起飛前120分鐘才開始報到，22:05航班即20:05；提早到不保證能提早進免稅區。", "query": null}, {"time": "22:05", "name": "MM627 回程", "note": "依使用者提供訂單：成田第1航廈22:05起飛，12/14 01:25抵達桃園第1航廈；均為當地時間。", "query": null}], "notes": ["東京大學本鄉是暫採校區；戶外及對外開放的共用空間可自由見學，學部建物與教室原則不能進入。不是預約導覽。", "官網10/27查證：自由見學請在07:00–18:00範圍內；各門開放不同，週末部分大門關閉，仍可能開小門，依現場警衛指示。12/13臨時活動或限制出發前再核。", "赤門正進行耐震改修，官網預計2027年9月左右完成；不當入校入口，也不保證拍得到完整無遮擋外觀。可由伊藤國際學術研究中心門或龍岡門等開放門進出，具體依當天公告。", "校方規則：見學攝影限個人用途，不允許把照片／影片刊登於SNS等；不把這裡列為攝影師旅拍、商業攝影或婚紗場地。以安靜逛校園為主。", "依旅客訂單，回程航班22:05由成田起飛。依Peach成田國際線官網：T1北翼4F，報到起飛前120–50分鐘。", "目標17:20 Skyliner、18:03到T1；取行李與到上野車站時間須依最終住宿另留。", "機場免稅店各店閉店時間不同，不少約20:30–21:30；完成報到安檢後可逛時間有限，不能保證每間都開。", "下午收藏補點為彈性安排；取行李與Skyliner優先，遇排隊就外帶或略過。", "住宿退房：11:00前完成。"], "rain": "小雨縮短校園戶外散步；大雨可取消校園改室內用餐休息，保持機場交通餘裕。", "weather": {"status": "forecast_pending", "text": "當日預報尚未發布，接近出發時更新。", "sourceUrl": "https://www.jma.go.jp/bosai/forecast/", "checkedAt": null}}]</script><script>
+</style><div class="wrap"><header><div class="site-header"><a class="site-brand" href="itinerary.html">東京之旅</a><nav class="site-nav" aria-label="網站頁面"><a href="itinerary.html">行程</a><a href="collections.html">收藏</a><a href="map.html">地圖</a><a href="tools.html">工具</a></nav></div></header><h1>行程編輯</h1><p class="muted">改時間、調順序，把交通留在兩站之間。東京 2026/12/3–12/13 · 日本當地時間</p><div class="notice"><b>儲存範圍：</b>修改自動存在這台裝置的此瀏覽器，旅伴開同一網址不會同步看到修改。用「匯出行程」傳檔案，再由旅伴匯入；這版沒有多人即時共編。<br><b>交通：</b>可手動填方式、分鐘與路線備註，也能開Google Maps查詢。可編輯路線、行車方向、轉乘與出口。排序後會清空交通分鐘待重查；不會自動呼叫付費地圖API。</div><div class="toolbar"><button id="export" class="primary">匯出行程 JSON</button><button id="import">匯入行程</button><input type="file" id="file" accept=".json,application/json" hidden><button id="undo" disabled>復原上一步</button><button id="reset">重設今日</button><button id="latest">套用最新原版</button><button id="print">列印今日</button></div><div id="status" role="status" aria-live="polite"></div><nav class="days" id="days" aria-label="行程日期"></nav><main id="editor"></main><button id="add" class="primary" style="margin-top:20px">＋ 新增景點</button><div class="footer muted">固定時間會保留，其他時刻依「上一站結束＋交通分鐘」推算。停留或交通沒填時，後續會顯示待補；推算不代表已確認班次、營業時間或預約。跨午夜請另安排下一天。</div></div><script id="seed" type="application/json">[
+  {
+    "n": 1,
+    "date": "12/03",
+    "week": "四",
+    "title": "Day 1",
+    "area": "成田 → 日暮里 → 山中湖",
+    "kind": "富士山",
+    "lead": "06:30抵達成田，搭Skyliner至日暮里取車後往山中湖；先採買晚餐與早餐，16:30入住Forest Cottage L-1，晚上在木屋料理、BBQ或營火。",
+    "stops": [
+      {
+        "time": "06:30",
+        "name": "MM620 抵達成田第1航廈",
+        "note": "12/3（四）02:25自桃園第1航廈起飛，06:30抵達成田第1航廈；時間均為當地時間，依旅客提供訂單。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "06:30–07:30／08:00・估算",
+        "name": "下機、入境審查、領行李與海關",
+        "note": "以落地後60–90分鐘作規劃，預估07:30–08:00走到入境大廳；不是保證出關時間。遇排隊、行李延遲或航班晚到可能更久。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "出關後約15–25分鐘・估算",
+        "name": "前往B1京成車站、購票／劃位",
+        "note": "預留走到地下車站、換票或購票與找月台時間；Skyliner搭到日暮里。08:30取車較緊，不預先鎖定趕不上的車次。",
+        "query": "成田空港 第1ターミナル 京成",
+        "resources": [
+          {
+            "label": "京成官方時刻查詢",
+            "url": "https://keisei.ekitan.com/naritaacs-i/timetable"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "約08:30–09:30抵達・規劃估算",
+        "name": "Skyliner → 日暮里站",
+        "note": "車程先留約40–60分鐘，另加候車；具體12/3班次尚待確認，不把此區間視為已確認車次。若出關特別順利可提早抵達；以現場能搭上的班次為準。",
+        "query": "日暮里駅",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "預約08:30・實際可能晚到",
+        "name": "日暮里站前店取車",
+        "note": "租期：2026/12/3 08:30至12/5 20:00。出站找路暫留10–15分鐘、辦手續20–30分鐘，門市地址與步行時間待租車公司確認；若趕不上08:30，提前聯絡門市。確認冬季胎、ETC、保險與第二位駕駛登記。",
+        "query": "日暮里駅 レンタカー",
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 104,
+          "line": "中央自動車道",
+          "direction": "",
+          "detail": "126公里、收費道路。以日暮里站代替尚未確認地址的租車門市；含休息與午餐建議預留3–4小時。",
+          "origin": "日暮里駅",
+          "destination": "オギノ 山中湖店",
+          "destinationName": "Ogino 山中湖店採買",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "約09:00–10:15後出發・依取車進度",
+        "name": "日暮里 → 山中湖自駕",
+        "note": "先留約3–4小時含市區出城與途中休息，屬規劃估算，非即時導航；以16:30抵達住宿為目標，塞車時縮短沿途停留。",
+        "query": "日暮里 小田急山中湖フォレストコテージ 自動車",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "途中・彈性",
+        "name": "休息站午餐／休息",
+        "note": "依路線安排休息站；駕駛人輪替前先確認都已登記為駕駛。",
+        "query": "中央自動車道 サービスエリア",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "14:30–15:30・預留估算",
+        "name": "Ogino 山中湖店採買",
+        "note": "先買晚餐、早餐、草莓、熟食、飲水、調味料與食用油；車程與當日營業時間出發前再核。BBQ食材與營火耗材另購。",
+        "query": "オギノ 山中湖店",
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 10,
+          "line": "道志みち",
+          "direction": "",
+          "detail": "5.9公里。",
+          "origin": "オギノ 山中湖店",
+          "destination": "小田急山中湖フォレストコテージ",
+          "destinationName": "小田急山中湖 Forest Cottage｜Leaf Cottage L-1",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:30・預計抵達",
+        "name": "小田急山中湖 Forest Cottage｜Leaf Cottage L-1",
+        "note": "已訂12/3入住、12/4退房，2位成人。報到15:00–17:00；現場付款，可刷信用卡。訂單總額¥24,200，含追加車輛¥1,100待向住宿方確認；尚未改為較低金額。",
+        "query": "小田急山中湖フォレストコテージ",
+        "payment": "cash_and_card",
+        "resources": [
+          {
+            "label": "住宿與設備",
+            "url": "stay.html#forest-cottage"
+          },
+          {
+            "label": "官網",
+            "url": "https://www.odakyu-forest.com/"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "報到後–18:00・如要使用",
+        "name": "公共浴場／木屋私人淋浴",
+        "note": "公共浴場目前公告15:00–18:00，季節可能調整，以報到說明為準；自備毛巾與盥洗用品，也可使用L-1私人淋浴。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "18:00–21:00前",
+        "name": "木屋晚餐、BBQ與營火",
+        "note": "有廚房、遮棚露台與戶外設備；食材、調味料、烤網與燃料自備或現場購買。風雨雪時依場方規定改室內料理。21:00後保持安靜、不移動車輛。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "21:00後・安靜休息",
+        "name": "住宿｜Forest Cottage・Leaf Cottage L-1",
+        "note": "12/3–12/4住山中湖木屋；今晚在園區休息，21:00後禁止車輛進出與移動。隔天10:00前退房。 入住15:00–17:00（預計16:30）；12/4 10:00前退房。",
+        "query": "小田急山中湖フォレストコテージ",
+        "nightlyStay": true,
+        "resources": [
+          {
+            "label": "住宿官網",
+            "url": "https://www.odakyu-forest.com/"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.odakyu-forest.com/"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "12/3已訂山中湖Forest Cottage L-1；12/4晚住宿待選，並非兩晚連住河口湖。",
+      "16:30抵達、17:00前完成報到；延誤時先聯絡0555-62-2171。",
+      "自備浴巾、毛巾、牙刷牙膏、洗沐用品與睡衣；BBQ耗材、食材、調味料另備。",
+      "訂單追加車輛¥1,100與租車雪胎是否包含，仍待確認。"
+    ],
+    "rain": "雨雪或能見度差時延後出發、縮減沿途停留；必要時取消湖畔散步。",
+    "weather": "出發前查看成田至河口湖沿線天氣、降雪及高速道路公告。"
+  },
+  {
+    "n": 2,
+    "date": "12/04",
+    "week": "五",
+    "title": "Day 2",
+    "area": "山中湖 → 河口湖 → 箱根",
+    "kind": "富士山",
+    "lead": "山中湖木屋早餐、10:00前退房；河口湖拍照與午餐後，下午自駕前往箱根仙石原，入住箱根リゾートyamaki。",
+    "stops": [
+      {
+        "time": "清晨–09:00",
+        "name": "山中湖私人棧橋看山、木屋早餐",
+        "note": "依天氣步行至園區湖畔棧橋；回木屋早餐、整理廚房與行李，不保證能見度。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "09:00–10:00",
+        "name": "整理、10:00前退房",
+        "note": "L-1退房截止10:00，冬季不安排延遲退房；清理料理與營火區，依場方指示完成退房。",
+        "query": null,
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 35,
+          "line": "東富士五湖道路・國道138",
+          "direction": "",
+          "detail": "24.3公里、部分收費。",
+          "origin": "小田急山中湖フォレストコテージ",
+          "destination": "大石公園 河口湖",
+          "destinationName": "大石公園、湖畔拍照",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "10:00–11:00・預留估算",
+        "name": "山中湖 → 河口湖北岸",
+        "note": "先留約1小時車程與停車緩衝，非導航實測；雨雪路況視當日調整。",
+        "query": "山中湖 大石公園 自動車",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "11:00–12:00",
+        "name": "大石公園、湖畔拍照",
+        "note": "留約1小時看山、拍照與散步。12月以湖景和富士山為主，不安排夏季花田體驗；能見度依天氣。",
+        "query": "大石公園 河口湖",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://www.town.fujikawaguchiko.yamanashi.jp/ka/info.php?if_id=2346"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 3,
+          "line": "湖畔步道",
+          "direction": "",
+          "detail": "200公尺；車停大石公園，午餐店家與單車租借點依當天選擇。",
+          "origin": "大石公園 河口湖",
+          "destination": "河口湖 Hana Terrace",
+          "destinationName": "湖畔電動輔助自行車／Hana Terrace 咖啡",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "12:00–13:00",
+        "name": "湖區午餐",
+        "note": "以北岸或Hana Terrace周邊正餐為主，餐廳依營業日與候位選擇；先留一小時，不為吃飯跨區。",
+        "query": "河口湖 大石公園 ランチ",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:00–14:00・擇一短停",
+        "name": "湖畔電動輔助自行車／Hana Terrace 咖啡",
+        "note": "湖畔短程騎行或Hana Terrace咖啡擇一，14:00前收尾前往箱根；租車借還及天候不合時直接選咖啡。",
+        "query": "富士大石ハナテラス",
+        "resources": [
+          {
+            "label": "Hana Terrace",
+            "url": "https://www.fujioishihanaterasu.com/"
+          },
+          {
+            "label": "DouDouBear",
+            "url": "https://www.ddbear.jp/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 66,
+          "line": "國道138",
+          "direction": "",
+          "detail": "約49.3公里；以大石公園為出發點，預留90分鐘。",
+          "origin": "大石公園",
+          "destination": "箱根リゾートyamaki 仙石原474",
+          "destinationName": "入住箱根 リゾート yamaki",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "14:00–16:00・移動估算",
+        "name": "河口湖 → 箱根仙石原",
+        "note": "自駕先預留約2小時含停車及休息，非實測導航；雨雪、結冰或塞車時提早離開河口湖。住宿最晚報到時間須依訂單確認。",
+        "query": "大石公園 箱根リゾートyamaki 自動車",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "約16:00・暫估",
+        "name": "入住箱根 リゾート yamaki",
+        "note": "已確認12/4入住、12/5退房；地址神奈川縣足柄下郡箱根町仙石原474。房型、入住截止、餐食、退房與付款依訂單，抵達時間暫估。 12/4–12/5住箱根仙石原；晚餐後回住宿休息。入住、退房時間及餐食依訂單確認。 入住15:00–20:00；12/5 10:00前退房。",
+        "query": "箱根 リゾート yamaki 仙石原474",
+        "resources": [
+          {
+            "label": "官網",
+            "url": "https://hakone-resort-yamaki.com/"
+          },
+          {
+            "label": "指定地圖",
+            "url": "https://maps.app.goo.gl/EicdriZHNRHGvbN17"
+          },
+          {
+            "label": "住宿官網",
+            "url": "https://hakone-resort-yamaki.com/"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://hakone-resort-yamaki.com/faq.php"
+          }
+        ],
+        "nightlyStay": true,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "12/4第二晚已確認箱根リゾートyamaki，不住河口湖。",
+      "河口湖14:00前收尾，保留前往箱根的交通時間；入住15:00–20:00，隔日10:00前退房。",
+      "12/5從箱根前往御殿場，20:00前日暮里還車。",
+      "住宿退房：10:00前完成。"
+    ],
+    "rain": "雨雪或路面結冰時縮短河口湖停留、取消騎行；以當日道路公告及入住截止安排前往箱根，不再隔天折返河口湖補拍。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布；出發前查看富士山能見度、湖畔風勢及道路結冰。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 3,
+    "date": "12/05",
+    "week": "六",
+    "title": "Day 3",
+    "area": "箱根 → 御殿場 → 日暮里",
+    "kind": "富士山",
+    "lead": "箱根yamaki早餐退房後逛御殿場；15:30左右離場，20:00前日暮里還車，入住LIO HOTEL Tokyo Nippori。",
+    "stops": [
+      {
+        "time": "08:00–10:00・依飯店餐期與退房時間",
+        "name": "箱根yamaki早餐、退房",
+        "note": "早餐供應與退房截止以已訂方案為準，未取得訂單細節；不再安排河口湖補拍。",
+        "query": "箱根 リゾート yamaki",
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 19,
+          "line": "國道138",
+          "direction": "",
+          "detail": "12.6公里。",
+          "origin": "箱根リゾートyamaki 仙石原474",
+          "destination": "御殿場プレミアムアウトレット",
+          "destinationName": "御殿場 Premium Outlets",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "約10:30–12:00・預留估算",
+        "name": "箱根仙石原 → 御殿場 Premium Outlets",
+        "note": "先保留原10:30–12:00交通緩衝，實際車程依冬季路況、停車及導航更新；出發地改箱根，不再從河口湖出發。",
+        "query": "箱根 仙石原 御殿場プレミアムアウトレット 自動車",
+        "resources": [
+          {
+            "label": "官方自駕交通",
+            "url": "https://www.premiumoutlets.co.jp/gotemba/access/index.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "12:00–15:30・含午餐",
+        "name": "御殿場 Premium Outlets",
+        "note": "約3.5小時用餐與購物，先逛優先品牌；為12/5 20:00還車提早離場，遇高速塞車再提前。",
+        "query": "御殿場プレミアムアウトレット",
+        "resources": [
+          {
+            "label": "官方店鋪名錄",
+            "url": "https://www.premiumoutlets.co.jp/en/gotemba/brands/shop_name.html"
+          }
+        ],
+        "transportToNext": {
+          "mode": "自駕",
+          "minutes": 133,
+          "line": "東名高速道路",
+          "direction": "",
+          "detail": "約110公里、收費。建議預留3–3.5小時另加油與還車手續；20:00還車。門市地址確認後再更新。",
+          "origin": "御殿場プレミアムアウトレット",
+          "destination": "日暮里駅",
+          "destinationName": "御殿場 → 日暮里、加油還車",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "15:30–19:30・預留估算",
+        "name": "御殿場 → 日暮里、加油還車",
+        "note": "租車預約20:00結束，目標19:30前回日暮里站前店完成加油與還車準備。約4小時含週六車流、休息、加油及市區緩衝，非導航實測；當天依路況提前離開Outlet。還車門市以訂單確認。",
+        "query": "御殿場 日暮里 自動車",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 5,
+          "line": "ルートにっぽり",
+          "direction": "",
+          "detail": "350公尺；以日暮里站為起點，實際租車門市步行待地址確認。",
+          "origin": "日暮里駅",
+          "destination": "LIO HOTEL Tokyo Nippori",
+          "destinationName": "入住 LIO HOTEL Tokyo Nippori",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "抵達後",
+        "name": "入住 LIO HOTEL Tokyo Nippori",
+        "note": "已確認12/5–12/9共4晚。還車後前往住宿，晚到報到與房型依訂單；不另安排固定活動。 12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。",
+        "query": "LIO HOTEL Tokyo Nippori",
+        "resources": [
+          {
+            "label": "住宿頁",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"
+          },
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"
+          }
+        ],
+        "nightlyStay": true,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "12/5從箱根退房前往御殿場，再回日暮里還車並入住LIO。",
+      "御殿場品牌清單已列採購頁。午餐包含在購物時段，不另外跨區用餐。",
+      "所有開車時段為預留估算；以最終租車門市、飯店、還車截止與出發前導航結果調整。",
+      "東京市區採買保留12/12，不因Outlet回程較晚再加排夜間購物。",
+      "住宿退房：10:00前完成。"
+    ],
+    "rain": "雨雪或高速路況不佳時提早離開箱根、縮短Outlet，以準時還車為主。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "出發前確認箱根至御殿場及回東京沿線天氣、道路公告。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 4,
+    "date": "12/06",
+    "week": "日",
+    "title": "Day 4",
+    "area": "新宿 → 麻布台 → 新橋",
+    "kind": "city",
+    "lead": "09:00新宿編髮，麻布台披薩、teamLab、黃昏看景與市集；晚餐前往新橋。",
+    "stops": [
+      {
+        "time": "08:15出門 → 約08:45抵達",
+        "name": "LIO HOTEL Tokyo Nippori → ARIES 新宿東南口店",
+        "note": "依旅客提供的Google Maps查詢時間約30分鐘；預計08:45到店，09:00編髮，保留15分鐘報到與溝通。交通時間為旅客提供，非即時班次。",
+        "query": "アリエス 新宿東南口店 新宿4-1-6",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 29,
+          "line": "山手線",
+          "direction": "池袋・新宿",
+          "detail": "西日暮里→新宿；車程21分、前後步行約8分。仍維持08:15出門，保留09:00預約緩衝。",
+          "origin": "LIO HOTEL Tokyo Nippori",
+          "destination": "Aries 新宿東南口店 新宿4-1-6 田畑ビル2F",
+          "destinationName": "ARIES 新宿東南口店・綁髮",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "09:00–09:30・預計預約",
+        "name": "ARIES 新宿東南口店・綁髮",
+        "note": "編髮預留30分鐘，09:00為預計預約時間，尚未確認訂位。08:45左右抵達，留15分鐘報到與溝通。東京都新宿區新宿4-1-6 田畑ビル2F；假日基本編髮¥3,000，指名及特殊造型另計。實際完成時間依店家安排。",
+        "query": "Aries 新宿東南口店 新宿4-1-6 田畑ビル2F",
+        "bookingStatus": "planned_not_booked",
+        "resources": [
+          {
+            "label": "官網／價目",
+            "url": "https://aries-cosmetology.com/aries_new_south/"
+          },
+          {
+            "label": "預約頁",
+            "url": "https://beauty.hotpepper.jp/slnH000410928/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "JR／地鐵",
+          "minutes": 33,
+          "line": "中央線快速 → 南北線",
+          "direction": "東京／目黑",
+          "detail": "新宿→四ツ谷換南北線→六本木一丁目，步行至餐廳；建議預留45–50分鐘。",
+          "origin": "Aries 新宿東南口店 新宿4-1-6 田畑ビル2F",
+          "destination": "RistoPizza by Napoli sta ca 麻布台ヒルズ",
+          "destinationName": "RistoPizza by Napoli sta ca 麻布台 Hills 店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "約09:45–10:35",
+        "name": "新宿 → 麻布台之丘",
+        "note": "依旅客提供的Google Maps查詢時間，髮廊至麻布台約50分鐘；完成編髮後保留15分鐘整理與離店緩衝，約10:35抵達，再步行確認餐廳位置，11:30午餐。當日依實際班次調整。",
+        "query": "新宿駅 麻布台ヒルズ RistoPizza",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "11:30–13:00・依預約確認",
+        "name": "RistoPizza by Napoli sta ca 麻布台 Hills 店",
+        "note": "Tower Plaza 3F，披薩午餐目標11:30；依預約確認信時段。午餐預算參考¥3,200–6,000／人，並非套餐報價。",
+        "query": "RistoPizza by Napoli sta ca 麻布台ヒルズ",
+        "resources": [
+          {
+            "label": "店家官網",
+            "url": "https://napolistaca.jp/ristopizza/restaurant.html"
+          },
+          {
+            "label": "官方預約",
+            "url": "https://www.tablecheck.com/ja/shops/ristopizzabynapolistaca/reserve"
+          },
+          {
+            "label": "館方資訊",
+            "url": "https://www.azabudai-hills.com/shop_list/0029.html"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 7,
+          "line": "桜麻通り",
+          "direction": "",
+          "detail": "約550公尺；外帶店擇一，含室內與報到預留15–20分鐘。",
+          "origin": "RistoPizza by Napoli sta ca 麻布台ヒルズ",
+          "destination": "teamLab Borderless 麻布台",
+          "destinationName": "teamLab Borderless",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "13:00–13:30",
+        "name": "餐廳 → teamLab",
+        "note": "園區內步行至Garden Plaza B B1，預留找路、洗手間與入場時間。外帶購物有餘裕再安排。",
+        "query": "teamLab Borderless 麻布台",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:00–13:30之間・擇一短停",
+        "name": "Comme’N TOKYO 麻布台 Hills 店",
+        "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Garden Plaza C B1，買喜歡的麵包外帶，不在這裡再吃一餐；官網常態08:00–20:00、全年無休（2026/10/29查）。",
+        "query": "Comme'N TOKYO 麻布台ヒルズ店",
+        "tabelog": "https://tabelog.com/tokyo/A1307/A130701/13294775/",
+        "resources": [
+          {
+            "label": "官方店鋪資訊",
+            "url": "https://commen.jp/shop_list/"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:00–13:30之間・擇一短停",
+        "name": "鈴懸 麻布台 Hills 店",
+        "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Garden Plaza C B1，和菓子外帶；官網常態11:00–20:00，店休1/1、1/2（2026/10/29查）。品項與保存方式依店家。",
+        "query": "鈴懸 麻布台ヒルズ店",
+        "tabelog": "https://tabelog.com/tokyo/A1307/A130704/13291768/",
+        "resources": [
+          {
+            "label": "官網",
+            "url": "https://www.suzukake.co.jp/shops/azabudai"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:00–13:30之間・擇一短停",
+        "name": "%ARABICA 麻布台 Hills 4F",
+        "note": "與前往teamLab共用這30分鐘；只挑順路、無須排隊的一間外帶，時間不足就略過，優先準時入場。Tower Plaza 4F，披薩後順上樓買咖啡；官網常態11:00–20:00，館方消費參考¥550–1,000／人（2026/10/29查）。",
+        "query": "アラビカ東京 麻布台ヒルズ4F店",
+        "tabelog": "https://tabelog.com/tokyo/A1307/A130701/13291787/",
+        "resources": [
+          {
+            "label": "館方資訊",
+            "url": "https://www.azabudai-hills.com/shop_list/0077.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:30–14:00 入場",
+        "name": "teamLab Borderless",
+        "note": "選定入場時段13:30–14:00，依票券確認；不是只參觀半小時。預留約2.5–3小時，若14:00才入場，看景時間相應縮短。",
+        "query": "teamLab Borderless 麻布台",
+        "dateLocked": true,
+        "bookingStatus": "planned_not_booked",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 8,
+          "line": "麻布台之丘園區",
+          "direction": "",
+          "detail": "約550公尺；34樓電梯與候位另計，預留20–30分鐘。",
+          "origin": "teamLab Borderless 麻布台",
+          "destination": "Hills House Sky Room Cafe Bar",
+          "destinationName": "Sky Room Cafe & Bar 看黃昏",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "約16:15–17:00・含候位",
+        "name": "Sky Room Cafe & Bar 看黃昏",
+        "note": "傍晚看景；34F餐飲空間，非免費展望台。須依當日開放與候位安排，無法保證窗邊座位；若teamLab較晚入場或上樓候位較久，不催促參觀，以現場調整。",
+        "query": "Hills House Sky Room Cafe Bar",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 2,
+          "line": "中央廣場",
+          "direction": "",
+          "detail": "約170公尺；下樓另留時間，預留10–15分鐘。",
+          "origin": "Hills House Sky Room Cafe Bar",
+          "destination": "麻布台ヒルズ 中央広場",
+          "destinationName": "麻布台聖誕市集",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "17:00–18:30",
+        "name": "麻布台聖誕市集",
+        "note": "麻布台之丘中央廣場（Arena及草坪區）；2026官方公告11/21–12/25，11:00–21:00。看景後下樓逛市集。",
+        "query": "麻布台ヒルズ 中央広場",
+        "resources": [
+          {
+            "label": "官方活動",
+            "url": "https://www.azabudai-hills.com/sp/christmashills/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "自行車",
+          "minutes": 10,
+          "line": "第一京濱／國道15",
+          "direction": "",
+          "detail": "約2.3公里；含找車、取還車預留20–30分鐘。無車時步行約32分或大眾運輸約18分。",
+          "origin": "麻布台ヒルズ 中央広場",
+          "destination": "かに地獄 新橋 新橋2-16-1",
+          "destinationName": "かに地獄 新橋",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "18:30–19:00・交通預留",
+        "name": "麻布台 → 新橋",
+        "note": "依你提供的Google Maps，自行車騎乘約10分鐘；加上找車、取還車與步行先留20–30分鐘。共享車以App當下車輛、可還站點為準；無車改步行約31分鐘，雨天改搭車。",
+        "query": "麻布台ヒルズ かに地獄 新橋",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "19:00–20:30・未預約",
+        "name": "かに地獄 新橋",
+        "note": "螃蟹料理改選此店。新橋2-16-1 ニュー新橋ビル；實際報到樓層依訂位確認。想點原味清蒸帝王蟹腳，單點方式、份量、價格與當日供應仍待確認。",
+        "query": "かに地獄 新橋 新橋2-16-1",
+        "resources": [
+          {
+            "label": "指定Google Maps店家",
+            "url": "https://maps.app.goo.gl/v3YUVzA4cWiFqv2B7?g_st=ic"
+          }
+        ],
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 23,
+          "line": "山手線",
+          "direction": "東京・上野",
+          "detail": "新橋→西日暮里；車程17分、前後步行約6分。",
+          "origin": "かに地獄 新橋 新橋2-16-1",
+          "destination": "LIO HOTEL Tokyo Nippori",
+          "destinationName": "返回住宿｜LIO HOTEL Tokyo Nippori",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "晚間・行程結束後",
+        "name": "返回住宿｜LIO HOTEL Tokyo Nippori",
+        "note": "12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。",
+        "query": "LIO HOTEL Tokyo Nippori",
+        "nightlyStay": true,
+        "resources": [
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "ARIES 09:00仍為預計預約時間；08:15從LIO出門。",
+      "披薩11:30、teamLab13:30–14:00入場時段維持；訂位及票券以確認信為準。",
+      "Comme’N、鈴懸、%ARABICA擇一外帶；先確保teamLab入場時間。",
+      "冨所已改12/7 18:00；本日晚餐為新橋螃蟹。"
+    ],
+    "rain": "teamLab依票券；雨天縮短戶外市集，看景依能見度與候位調整。保留晚餐交通時間。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 5,
+    "date": "12/07",
+    "week": "一",
+    "title": "Day 5",
+    "area": "築地 → 東京站 → 銀座 → 御成門",
+    "kind": "city",
+    "lead": "築地早午餐，東京站伴手禮與DEPOT；銀座SEAM、GINZA SIX及甜點，18:00冨所。",
+    "stops": [
+      {
+        "time": "08:30–10:15",
+        "name": "築地場外市場・早餐與早午餐",
+        "note": "早餐、早午餐擇一主餐搭小吃：牡蠣と貝（鹽味貝拉麵／濃厚牡蠣沾麵）；Marukita（鮪魚拼盤、臉頰肉、鱈場蟹）；鮨國（全海膽蓋飯）；WAGYU JYUJYU（想吃8L蒸帝王蟹腳，供應待核）；山長（明太子玉子燒）。以上想吃品項為使用者筆記，非保證供應。長谷川豬排11:30才開始午餐，與本次11:00離開築地不合，保留收藏，不硬塞。",
+        "query": "築地場外市場",
+        "resources": [
+          {
+            "label": "築地收藏與推薦品項",
+            "url": "https://chumuamkbe.github.io/japan-travel/collections.html#saved-card-13"
+          },
+          {
+            "label": "場外市場官網",
+            "url": "https://www.tsukiji.or.jp/"
+          },
+          {
+            "label": "鮨國店頁",
+            "url": "https://www.tsukiji.or.jp/shoplist/cat-d/cat-13/588/"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "10:15–10:45・含候位",
+        "name": "築地そらつき（Soratsuki）",
+        "note": "草莓大福、霜淇淋短停；築地4-11-10。官網常態08:00–15:00、不定休（2026/10/30查）；當日口味與霜淇淋供應依現場。11:00前離開築地前往東京站。",
+        "query": "築地そらつき 総本店 築地4-11-10",
+        "tabelog": "https://tabelog.com/tokyo/A1313/A131301/13180099/",
+        "resources": [
+          {
+            "label": "官網",
+            "url": "https://soratsuki.jp/access.html"
+          }
+        ],
+        "transportToNext": {
+          "mode": "公車",
+          "minutes": 17,
+          "line": "都05-2／都04／都05-1",
+          "direction": "東京站丸之內南口",
+          "detail": "築地三丁目上車→東京站丸之內南口，車程約10分、步行約7分。入站購物另留時間。",
+          "origin": "築地そらつき 総本店 築地4-11-10",
+          "destination": "喫茶店に恋して。東京駅グランスタ店",
+          "destinationName": "喫茶店に恋して。東京駅グランスタ店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "10:45–11:25・移動預留",
+        "name": "築地 → 東京站",
+        "note": "預留40分鐘含乘車、步行與找路，依當日班次更新。",
+        "query": "築地 東京駅 乗換",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "11:25–11:55・30分鐘",
+        "name": "喫茶店に恋して。東京駅グランスタ店",
+        "note": "東京站B1銀の鈴附近、JR改札內伴手禮店；停留約半小時，先買伴手禮。不是座位咖啡廳；進站方式依當日交通安排。",
+        "query": "喫茶店に恋して。東京駅グランスタ店",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": null,
+          "line": "東京站內",
+          "direction": "",
+          "detail": "站內與大丸1F移動，預留10–15分鐘；非Google Maps實測。",
+          "origin": "喫茶店に恋して。東京駅グランスタ店",
+          "destination": "シュガーバターの木 大丸東京店",
+          "destinationName": "砂糖樹・東京站大丸",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "11:55–12:15",
+        "name": "砂糖樹・東京站大丸",
+        "note": "前往大丸東京1F購買シュガーバターの木；和前一站分處改札內外，保留出站與找店時間。",
+        "query": "シュガーバターの木 大丸東京店",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://www.sugarbuttertree.jp/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": null,
+          "line": "東京站內",
+          "direction": "",
+          "detail": "大丸1F→GRANSTA地下DEPOT，預留10–15分鐘；非Google Maps實測。",
+          "origin": "シュガーバターの木 大丸東京店",
+          "destination": "DEPOT 東京駅 グランスタ B1",
+          "destinationName": "DEPOT",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "12:15–13:00・彈性短停",
+        "name": "DEPOT",
+        "note": "東京站B1改札外，作為咖啡／布丁短停；不需久留，布丁供應依現場。",
+        "query": "DEPOT 東京駅 グランスタ B1",
+        "tabelog": "https://tabelog.com/tw/tokyo/A1302/A130201/13249428/",
+        "payment": "可刷卡・交通IC",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 14,
+          "line": "京濱東北線",
+          "direction": "品川・大船",
+          "detail": "東京→有樂町，再步行約9分至SEAM；全程步行約18分，也可視體力改走路。",
+          "origin": "DEPOT 東京駅 グランスタ B1",
+          "destination": "GINZA SEAM ONE GINZA",
+          "destinationName": "GINZA SEAM",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "13:00–13:40・移動預留",
+        "name": "東京站 → 銀座",
+        "note": "前往銀座；午餐若築地沒吃飽，先在東京站用餐，DEPOT可略過。",
+        "query": "銀座駅",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:40–14:30",
+        "name": "GINZA SEAM",
+        "note": "必去採購：BYKARTE／Aujua，詢問試用包並記得索取邀請碼辦線上會員。東京都中央区銀座1-8-19 ONE GINZA 3F；出發前再核營業時間與商品庫存。",
+        "query": "GINZA SEAM ONE GINZA",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 10,
+          "line": "中央通り",
+          "direction": "",
+          "detail": "約700公尺。",
+          "origin": "GINZA SEAM ONE GINZA",
+          "destination": "マーロウ GINZA SIX店 銀座6-10-1",
+          "destinationName": "GINZA SIX 逛街＋MARLOWE 布丁",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "14:30–16:00・含休息",
+        "name": "GINZA SIX 逛街＋MARLOWE 布丁",
+        "note": "逛街約2小時，另留買布丁與休息時間。MARLOWE位於B2F、僅外帶，常態營業10:30–20:30、公休依館方；布丁需冷藏，購買時確認保冷方式與攜帶時間（2026/11/6查）。",
+        "query": "マーロウ GINZA SIX店 銀座6-10-1",
+        "resources": [
+          {
+            "label": "MARLOWE 官網",
+            "url": "https://www.marlowe.co.jp/shop/ginza-six/"
+          },
+          {
+            "label": "GINZA SIX 營業時間",
+            "url": "https://ginza6.tokyo/hours/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 2,
+          "line": "銀座三原通り",
+          "direction": "",
+          "detail": "約110公尺。",
+          "origin": "マーロウ GINZA SIX店 銀座6-10-1",
+          "destination": "DOLCE TACUBO GINZA 銀座7-11-14",
+          "destinationName": "DOLCE TACUBO GINZA",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:00–16:30",
+        "name": "DOLCE TACUBO GINZA",
+        "note": "甜點停留約30分鐘，與SEAM GINZA安排同一天。銀座7-11-14 GINZAカムイビル1F；官網常態11:00–19:00、無定休（2026/10/29查）。分店品項與現貨依當日供應。",
+        "query": "DOLCE TACUBO GINZA 銀座7-11-14",
+        "resources": [
+          {
+            "label": "品牌官網",
+            "url": "https://d-tacubo.com/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "自行車",
+          "minutes": 6,
+          "line": "第一京濱／國道15",
+          "direction": "",
+          "detail": "約1.4公里；含租還車預留15–20分鐘，步行約20分鐘。18:00訂位，17:45前到店。",
+          "origin": "DOLCE TACUBO GINZA 銀座7-11-14",
+          "destination": "冨所 新橋6-13-3",
+          "destinationName": "冨所 Tomidokoro",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:30–17:45・含提前到店",
+        "name": "銀座 → 御成門・冨所",
+        "note": "交通與找路預留充裕時間，17:45前到店，依預約確認信報到。",
+        "query": "冨所 新橋6-13-3",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "18:00・已訂位",
+        "name": "冨所 Tomidokoro",
+        "note": "18:00已訂位；用餐長度與套餐金額依你的預約確認信，先預留約2小時。",
+        "query": "冨所 新橋6-13-3",
+        "tabelog": "https://tabelog.com/tw/tokyo/A1314/A131401/13223846/",
+        "bookingStatus": "confirmed",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 32,
+          "line": "京濱東北線",
+          "direction": "上野・大宮",
+          "detail": "步行約12分至新橋→西日暮里→步行約3分。",
+          "origin": "冨所 新橋6-13-3",
+          "destination": "LIO HOTEL Tokyo Nippori",
+          "destinationName": "返回住宿｜LIO HOTEL Tokyo Nippori",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "晚餐後",
+        "name": "返回住宿｜LIO HOTEL Tokyo Nippori",
+        "note": "藥妝採買約22:30結束，依住宿位置與體力提早收尾。 12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。",
+        "query": "LIO HOTEL Tokyo Nippori",
+        "nightlyStay": true,
+        "resources": [
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "冨所18:00已訂位，保留提前15分鐘到店。",
+      "喫茶店に恋して。停留30分鐘；砂糖樹在大丸東京1F。",
+      "SEAM記得索取邀請碼辦線上會員。",
+      "DOLCE TACUBO銀座為甜點；MARLOWE擇一，冷藏商品購買前確認保冷。"
+    ],
+    "rain": "以市場、東京站和銀座室內商場為主；下雨保留前往冨所的交通緩衝。",
+    "weather": "出發前確認原宿與池袋天氣；室內商場與藥妝可照常安排。",
+    "departureTransport": {
+      "mode": "地鐵",
+      "minutes": 37,
+      "line": "千代田線 → 日比谷線",
+      "direction": "代代木上原／北千住",
+      "detail": "西日暮里→日比谷換乘→築地，步行至場外市場。",
+      "origin": "LIO HOTEL Tokyo Nippori",
+      "destination": "築地場外市場",
+      "destinationName": "築地場外市場・早餐與早午餐",
+      "checkedAt": "2026/11/8",
+      "source": "Google Maps 查詢當下參考；非12月旅行日班次。"
+    }
+  },
+  {
+    "n": 6,
+    "date": "12/08",
+    "week": "二",
+    "title": "Day 6",
+    "area": "原宿 → 澀谷 → 高輪",
+    "kind": "city",
+    "lead": "若林之家後前往澀谷，午餐極味や、寶可夢中心、Kenyan奶茶與隱眼採買；晚間逛高輪。",
+    "stops": [
+      {
+        "time": "08:30出門",
+        "name": "LIO → 原宿",
+        "note": "早上預留交通與早餐；若林之家實際營業及現場候位以店家公告為準。",
+        "query": "原宿駅",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 33,
+          "line": "山手線",
+          "direction": "池袋・新宿",
+          "detail": "西日暮里→原宿；車程25分、前後步行約8分。",
+          "origin": "LIO HOTEL Tokyo Nippori",
+          "destination": "若林の家 カワウソ 神宮前1-6-8",
+          "destinationName": "若林の家（Otters Family）現場排隊",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "10:45到店・現場排隊",
+        "name": "若林の家（Otters Family）現場排隊",
+        "note": "不能預訂、只收現金（付款方式採旅客確認）。希望體驗約一小時，現行一般方案為25／50分；先以50分為偏好，擁擠時可能只接25分，排隊和入店時間不保證。",
+        "query": "若林の家 カワウソ 神宮前1-6-8",
+        "payment": "cash_only",
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 11,
+          "line": "明治通り",
+          "direction": "",
+          "detail": "約800公尺。",
+          "origin": "若林の家 カワウソ 神宮前1-6-8",
+          "destination": "ヘッドコンシェルジュ 神宮前店 神宮前6-23-1",
+          "destinationName": "ヘッドコンシェルジュ 神宮前店｜商品採買",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "約12:15–13:00・含途中採買",
+        "name": "原宿 → 神宮前 → 澀谷",
+        "note": "水獺希望體驗約50分鐘，另留排隊；時間延誤先吃午餐，縮短零碎購物。",
+        "query": "渋谷PARCO",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "前往澀谷途中・約15–20分鐘",
+        "name": "ヘッドコンシェルジュ 神宮前店｜商品採買",
+        "note": "只買商品，短停後前往澀谷午餐；商品庫存與是否需先聯絡依店家確認。神宮前6-23-1 第28SYビル，官網常態10:00–23:00（2026/11/8查）。",
+        "query": "ヘッドコンシェルジュ 神宮前店 神宮前6-23-1",
+        "resources": [
+          {
+            "label": "官網",
+            "url": "https://headconcierge.jp/shop/jingumae/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 11,
+          "line": "明治通り・神宮通り",
+          "direction": "",
+          "detail": "約750公尺。",
+          "origin": "ヘッドコンシェルジュ 神宮前店 神宮前6-23-1",
+          "destination": "極味や 渋谷PARCO",
+          "destinationName": "極味や 渋谷PARCO店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "13:00–14:15・含候位",
+        "name": "極味や 渋谷PARCO店",
+        "note": "收藏中的漢堡排店，PARCO B1；12/8週二常態11:30–23:00，LO22:00（2026/11/8官方查）。和寶可夢同棟最方便；若排隊超過可接受時間，改渋谷げんかつ，實際營業依店頁。",
+        "query": "極味や 渋谷PARCO",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://shibuya.parco.jp/shop/detail/?cd=025733"
+          },
+          {
+            "label": "豬排備選｜渋谷げんかつ",
+            "url": "https://tabelog.com/tokyo/A1303/A130301/13257081/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": null,
+          "line": "PARCO B1→6F",
+          "direction": "",
+          "detail": "同棟搭電梯，預留5–10分鐘；非Google Maps實測。",
+          "origin": "極味や 渋谷PARCO",
+          "destination": "ポケモンセンターシブヤ",
+          "destinationName": "寶可夢中心 澀谷",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "14:15–15:00",
+        "name": "寶可夢中心 澀谷",
+        "note": "PARCO 6F；官方常態10:00–21:00，JR澀谷站步行5分鐘（官方標示，2026/11/8查）。熱門活動可能管制入場。",
+        "query": "ポケモンセンターシブヤ",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-shibuya/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 4,
+          "line": "公園通り",
+          "direction": "",
+          "detail": "約230公尺。",
+          "origin": "ポケモンセンターシブヤ",
+          "destination": "ケニヤン 渋谷 神南1-14-8",
+          "destinationName": "Kenyan 澀谷奶茶",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "15:00–15:45",
+        "name": "Kenyan 澀谷奶茶",
+        "note": "你收藏的奶茶店，神南1-14-8；作為下午休息，不另外加一間甜點店。當日營業出發前再核。",
+        "query": "ケニヤン 渋谷 神南1-14-8",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://www.kenyan.co.jp/"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 8,
+          "line": "公園通り",
+          "direction": "",
+          "detail": "約600公尺。",
+          "origin": "ケニヤン 渋谷 神南1-14-8",
+          "destination": "HOTEL LOVERS 渋谷109",
+          "destinationName": "HOTEL LOVERS 澀谷109店・隱形眼鏡",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:00–16:45",
+        "name": "HOTEL LOVERS 澀谷109店・隱形眼鏡",
+        "note": "隱眼留在澀谷購買；帶上需要的度數、BC、DIA資料，商品與購買條件現場確認。",
+        "query": "HOTEL LOVERS 渋谷109",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 26,
+          "line": "山手線",
+          "direction": "品川・東京",
+          "detail": "澀谷→高輪Gateway，車程約14分、前後步行約12分。晚餐店家未定，繞行另計。",
+          "origin": "HOTEL LOVERS 渋谷109",
+          "destination": "NEWoMan 高輪 BEAMS CULTUART LUFTBAUM",
+          "destinationName": "BEAMS CULTUART＋LUFTBAUM",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:45–18:15・含交通與晚餐",
+        "name": "澀谷 → 高輪・晚餐",
+        "note": "先吃晚餐再逛高輪；餐廳待定，交通含步行與找路暫留45分鐘，其餘時間用餐。",
+        "query": "高輪ゲートウェイ駅",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "18:15–19:30・先BEAMS再LUFTBAUM",
+        "name": "BEAMS CULTUART＋LUFTBAUM",
+        "note": "同一棟NEWoMan高輪North：BEAMS在4F（常態11–20），空中花園在28–29F（整區常態8–24，各區不同）。先逛店再上樓看夜景，指定日開放、電梯等候與活動限制出發前再核。",
+        "query": "NEWoMan 高輪 BEAMS CULTUART LUFTBAUM",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 35,
+          "line": "京濱東北線",
+          "direction": "上野・南浦和",
+          "detail": "高輪Gateway→西日暮里；車程約25分、前後步行約10分。",
+          "origin": "NEWoMan 高輪 BEAMS CULTUART LUFTBAUM",
+          "destination": "LIO HOTEL Tokyo Nippori",
+          "destinationName": "返回住宿｜LIO HOTEL Tokyo Nippori",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "晚間・行程結束後",
+        "name": "返回住宿｜LIO HOTEL Tokyo Nippori",
+        "note": "12/5–12/9連住4晚。當晚行程結束後回日暮里住宿；返程時間依最後停留地點與班次安排，尚未實算。隔天出發野澤，留時間整理行李。 入住15:00–22:00；12/9 11:00前退房。須預先告知抵達時間。",
+        "query": "LIO HOTEL Tokyo Nippori",
+        "nightlyStay": true,
+        "resources": [
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/liohotel-tokyo-nippori.en-gb.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "若林之家現場排隊、僅收現金；體驗時長依當天方案。",
+      "極味や午餐，渋谷げんかつ作備選；Kenyan下午奶茶。",
+      "BEAMS 4F常態20:00關店，先逛店再到LUFTBAUM 28–29F。",
+      "隔天出發野澤，晚上回LIO整理行李。"
+    ],
+    "rain": "原宿戶外移動縮短；澀谷PARCO與高輪可室內逛街，水獺依現場候位。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 7,
+    "date": "12/09",
+    "week": "三",
+    "title": "Day 7",
+    "area": "東京 → 野澤溫泉",
+    "kind": "snow",
+    "lead": "四人會合取車，前往野澤。",
+    "stops": [
+      {
+        "time": "早上・已定方向",
+        "name": "退房、4 人會合、取車出發",
+        "note": "取車門市、時間、車款與行程路線未定。",
+        "query": null,
+        "transportToNext": {
+          "mode": "自駕",
+          "detail": "野澤住宿、集合點與取還車門市待你補充後，再查精確開車時間。",
+          "source": "起終點尚未確認。"
+        }
+      },
+      {
+        "time": "移動中",
+        "name": "東京 → 野澤溫泉",
+        "note": "當天路況及停靠點待定，不把河口湖串進這一天。",
+        "query": "野沢温泉",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "抵達後",
+        "name": "依已排好的住宿／教練安排",
+        "note": "使用者已安排相關項目；本頁未取得細節，不另編滑雪課時。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "晚間・行程結束後",
+        "name": "返回住宿｜野澤溫泉住宿",
+        "note": "12/9–12/11住宿已安排，名稱尚未提供；當晚回既有住宿休息，地址及返程待補。 入住／退房時間：待住宿名稱或訂單補充。",
+        "query": null,
+        "nightlyStay": true,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "12/9–12/11 三天費用不納入東京預算評估。",
+      "冬季道路、租車裝備與還車條件，等租車方案確定後核對。",
+      "住宿退房：11:00前完成。"
+    ],
+    "rain": "以路況、雪場與已安排課程的實際公告調整。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 8,
+    "date": "12/10",
+    "week": "四",
+    "title": "Day 8",
+    "area": "野澤溫泉",
+    "kind": "snow",
+    "lead": "野澤滑雪，依教練與雪場安排。",
+    "stops": [
+      {
+        "time": "白天",
+        "name": "滑雪／既有課程",
+        "note": "實際雪場開放、雪況與課程內容待出發前核對。",
+        "query": "野沢温泉スキー場",
+        "transportToNext": {
+          "mode": "自駕",
+          "detail": "野澤住宿、集合點與取還車門市待你補充後，再查精確開車時間。",
+          "source": "起終點尚未確認。"
+        }
+      },
+      {
+        "time": "晚上",
+        "name": "休息、溫泉或附近用餐",
+        "note": "僅列彈性方向，店家及設施未指定。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "晚間・行程結束後",
+        "name": "返回住宿｜野澤溫泉住宿",
+        "note": "12/9–12/11住宿已安排，名稱尚未提供；當晚回既有住宿休息，地址及返程待補。 入住／退房時間：待住宿名稱或訂單補充。",
+        "query": null,
+        "nightlyStay": true,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "12 月初雪況與可開放雪道不作保證，出發前看雪場官方公告。"
+    ],
+    "rain": "依雪場與教練安排調整，本頁不擅自更動既有預訂。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 9,
+    "date": "12/11",
+    "week": "五",
+    "title": "Day 9",
+    "area": "野澤溫泉 → 東京",
+    "kind": "snow",
+    "lead": "野澤滑雪，最晚16:30還器材，再回東京。",
+    "stops": [
+      {
+        "time": "上午至下午",
+        "name": "依既有安排滑雪",
+        "note": "是否提早結束，依當天課程與回程規劃。",
+        "query": null,
+        "transportToNext": {
+          "mode": "自駕",
+          "detail": "野澤住宿、集合點與取還車門市待你補充後，再查精確開車時間。",
+          "source": "起終點尚未確認。"
+        }
+      },
+      {
+        "time": "最晚 16:30・已知限制",
+        "name": "歸還滑雪器材",
+        "note": "這是使用者提供的最晚歸還時間，可以提早。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "還器材後",
+        "name": "開車回東京",
+        "note": "行車、休息與路況時間尚未實算，可能晚上才抵達。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "回城後",
+        "name": "入住 Japan House Sugamo、簡單晚餐",
+        "note": "已確認12/11–12/13共2晚；野澤回程可能晚到，提前向住宿確認入住指示與最晚報到時間。 12/11–12/13連住2晚，地址東京都豐島區巢鴨3-2-15。行程結束後返回住宿；交通依當天最後停留地點與班次安排，尚未實算。野澤回程可能晚到，須提前確認入住方式。 入住15:00–00:00；12/13 11:00前退房。須預先告知抵達時間，野澤返東京當晚留意入住截止。",
+        "query": "Japan House Sugamo 巣鴨3-2-15",
+        "resources": [
+          {
+            "label": "住宿頁",
+            "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"
+          },
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.en-gb.html"
+          }
+        ],
+        "nightlyStay": true,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "還車門市及營業截止時間必須先確認；不能假設晚上到東京一定能還車。",
+      "東京住宿已確認Japan House Sugamo；須確認野澤回程晚到的入住方式。"
+    ],
+    "rain": "雪況或道路狀況造成延遲時，以回城與休息為主。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  },
+  {
+    "n": 10,
+    "date": "12/12",
+    "week": "六",
+    "title": "Day 10",
+    "area": "外苑 → 代代木 → 池袋",
+    "kind": "city",
+    "lead": "外苑銀杏與代代木野餐，回住宿放用品；下午池袋先OS Drug，晚餐後繼續採買。",
+    "stops": [
+      {
+        "time": "08:30–09:30・1小時",
+        "name": "明治神宮外苑銀杏拍照",
+        "note": "預留約1小時自行拍照；葉況受當年氣候影響。",
+        "query": "明治神宮外苑 イチョウ並木",
+        "transportToNext": {
+          "mode": "地鐵",
+          "minutes": 18,
+          "line": "銀座線 → 千代田線",
+          "direction": "",
+          "detail": "外苑→代代木公園原宿門；採買店尚未選定，採買停留與繞行另計。",
+          "origin": "明治神宮外苑 イチョウ並木",
+          "destination": "代々木公園",
+          "destinationName": "代代木公園野餐",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "09:30–10:30・含交通與採買",
+        "name": "代代木公園野餐採買",
+        "note": "沿路購買午餐與飲料，垃圾自行帶走。",
+        "query": "代々木公園 近く テイクアウト",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "10:30–13:00・2.5小時",
+        "name": "代代木公園野餐",
+        "note": "依天氣保留2–3小時；下雨改室內用餐／咖啡。",
+        "query": "代々木公園",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 32,
+          "line": "山手線",
+          "direction": "新宿・池袋",
+          "detail": "原宿→巣鴨；前後步行約14分、車程18分。",
+          "origin": "代々木公園",
+          "destination": "Japan House Sugamo 巣鴨4-15-12",
+          "destinationName": "回Japan House Sugamo放野餐用品 → 池袋",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "13:00–14:30・交通與休息",
+        "name": "回Japan House Sugamo放野餐用品 → 池袋",
+        "note": "先回住宿放用品，再前往池袋；依你查詢，住宿至池袋門到門約24分鐘，班次以當日為準。",
+        "query": "Japan House Sugamo",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 17,
+          "line": "山手線",
+          "direction": "池袋・新宿",
+          "detail": "巣鴨→池袋；步行約11分、車程6分。先回住宿放野餐用品。",
+          "origin": "Japan House Sugamo 巣鴨4-15-12",
+          "destination": "オーエスドラッグ 池袋店",
+          "destinationName": "OS Drug 池袋店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "14:30–15:15",
+        "name": "OS Drug 池袋店",
+        "note": "本次第一間藥妝採買，先準備現金。西池袋1-1-30池袋西口地下街；常態10:00–19:45，出發前核對門市公告。",
+        "query": "オーエスドラッグ 池袋店",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://www.osdrug.com/sub1.htm"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 4,
+          "line": "池袋西口",
+          "direction": "",
+          "detail": "約210公尺；東武5F電梯另計。",
+          "origin": "オーエスドラッグ 池袋店",
+          "destination": "モンベル 池袋東武店",
+          "destinationName": "mont-bell 池袋東武店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "15:15–16:15",
+        "name": "mont-bell 池袋東武店",
+        "note": "先逛較早關門的東武店；東武百貨5F，常態10:00–19:00，臨時調整依館方。",
+        "query": "モンベル 池袋東武店",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://store.montbell.jp/search/shopinfo/?shop_no=678596"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 9,
+          "line": "池袋站通道",
+          "direction": "",
+          "detail": "約400公尺。",
+          "origin": "モンベル 池袋東武店",
+          "destination": "Onitsuka Tiger 池袋パルコ 南池袋1-28-2",
+          "destinationName": "Onitsuka Tiger 池袋PARCO店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "16:15–17:00",
+        "name": "Onitsuka Tiger 池袋PARCO店",
+        "note": "池袋PARCO本館2F，南池袋1-28-2；常態11:00–21:00，電話03-5396-1320（2026/10/30官網查）。預留45分鐘挑款試鞋，15:45離店前往晚餐；SENSE、DAISO零碎短停先略過。",
+        "query": "Onitsuka Tiger 池袋パルコ 南池袋1-28-2",
+        "resources": [
+          {
+            "label": "官方店家資訊",
+            "url": "https://ikebukuro.parco.jp/shop/detail/?cd=031507"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": null,
+          "line": "PARCO 2F→B2",
+          "direction": "",
+          "detail": "同棟，預留5–10分鐘；晚餐地點未定，交通另補。",
+          "origin": "Onitsuka Tiger 池袋パルコ 南池袋1-28-2",
+          "destination": "ポムダムールトーキョー 池袋パルコ店 南池袋1-28-2",
+          "destinationName": "Pomme d’Amour Tokyo 池袋 PARCO 店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "17:00–18:00",
+        "name": "晚餐｜待定",
+        "note": "先吃飽再繼續逛，餐廳留待挑選。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "18:00–18:30",
+        "name": "Pomme d’Amour Tokyo 池袋 PARCO 店",
+        "note": "想吃的蘋果糖；池袋PARCO本館B2，官網常態11:00–21:00（2026/10/29查）。離開LUMINE後穿越車站前往，再接東口藥妝。 21:00閉店，先直接前往；遇排隊或移動延誤不保證買到。",
+        "query": "ポムダムールトーキョー 池袋パルコ店 南池袋1-28-2",
+        "resources": [
+          {
+            "label": "官網",
+            "url": "https://www.pommedamourtokyo.com/locations"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 1,
+          "line": "池袋東口",
+          "direction": "",
+          "detail": "約82公尺。",
+          "origin": "ポムダムールトーキョー 池袋パルコ店 南池袋1-28-2",
+          "destination": "サンドラッグ 池袋東口駅前店 東池袋1-3-5",
+          "destinationName": "SUNDRUG 池袋東口駅前店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "18:30–20:00・1.5小時",
+        "name": "SUNDRUG 池袋東口駅前店",
+        "note": "藥妝以SUNDRUG為主；彩妝有需要再看附近松本清。營業與庫存依當日門市。",
+        "query": "サンドラッグ 池袋東口駅前店 東池袋1-3-5",
+        "resources": [
+          {
+            "label": "官方資訊",
+            "url": "https://sundrug-online.com/tools/locations/cities/toshima"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 9,
+          "line": "池袋站通道",
+          "direction": "",
+          "detail": "約500公尺；以LUMINE 3COINS為目的地，改DAISO需重查。",
+          "origin": "サンドラッグ 池袋東口駅前店 東池袋1-3-5",
+          "destination": "3COINS ルミネ池袋",
+          "destinationName": "3COINS+plus／DAISO",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "20:00前後・有餘裕再逛",
+        "name": "3COINS+plus／DAISO",
+        "note": "依剩餘體力與當日關店時間擇一；不另外前往新宿購物。",
+        "query": "3COINS plus 池袋",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 15,
+          "line": "山手線",
+          "direction": "上野・東京",
+          "detail": "池袋→巣鴨；車程5分、前後步行約10分。",
+          "origin": "ルミネ池袋",
+          "destination": "Japan House Sugamo 巣鴨4-15-12",
+          "destinationName": "返回住宿｜Japan House Sugamo",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "晚間・行程結束後",
+        "name": "返回住宿｜Japan House Sugamo",
+        "note": "12/11–12/13連住2晚，地址東京都豐島區巢鴨3-2-15。行程結束後返回住宿；交通依當天最後停留地點與班次安排，尚未實算。 入住15:00–00:00；12/13 11:00前退房。須預先告知抵達時間，野澤返東京當晚留意入住截止。",
+        "query": "Japan House Sugamo 巣鴨3-2-15",
+        "nightlyStay": true,
+        "resources": [
+          {
+            "label": "住宿資訊",
+            "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.zh-tw.html"
+          },
+          {
+            "label": "入住／退房規定",
+            "url": "https://www.booking.com/hotel/jp/japan-house-sugamo.en-gb.html"
+          }
+        ],
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "OS Drug先逛，接著mont-bell與Onitsuka Tiger；SUNDRUG為主要藥妝採買。",
+      "野餐用品先放回住宿，晚上不帶著逛街。",
+      "晚餐保留17:00–18:00，餐廳待定。",
+      "銀杏與野餐依天氣調整，購物可提早開始。"
+    ],
+    "rain": "下雨取消野餐、改室內午餐並提早池袋購物；銀杏視雨勢與葉況縮短。",
+    "weather": "出發前更新外苑葉況、降雨與風勢；野餐日注意低溫。",
+    "departureTransport": {
+      "mode": "地鐵",
+      "minutes": 39,
+      "line": "都營三田線 → 半藏門線",
+      "direction": "白金高輪／澀谷",
+      "detail": "巣鴨→神保町換乘→青山一丁目，步行至銀杏並木。",
+      "origin": "Japan House Sugamo 巣鴨4-15-12",
+      "destination": "明治神宮外苑 イチョウ並木",
+      "destinationName": "明治神宮外苑銀杏拍照",
+      "checkedAt": "2026/11/8",
+      "source": "Google Maps 查詢當下參考；非12月旅行日班次。"
+    }
+  },
+  {
+    "n": 11,
+    "date": "12/13",
+    "week": "日",
+    "title": "Day 11",
+    "area": "東京大學本鄉 → 秋葉原 → 上野 → 機場",
+    "kind": "city",
+    "lead": "東大與午餐後，秋葉原輕鬆短逛、上野買可麗露；15:15起取行李，搭Skyliner前往成田。",
+    "stops": [
+      {
+        "time": "約08:30出門・退房依飯店安排",
+        "name": "退房、處理行李",
+        "note": "從Japan House Sugamo退房；行李寄放尚未確認，可先查上野寄物設施，勿假設住宿提供寄放。",
+        "query": null,
+        "transportToNext": {
+          "mode": "地鐵",
+          "minutes": 25,
+          "line": "都營三田線 → 大江戶線",
+          "direction": "白金高輪／兩國・大門",
+          "detail": "巣鴨→春日換乘→本鄉三丁目，步行至龍岡門。",
+          "origin": "Japan House Sugamo 巣鴨4-15-12",
+          "destination": "東京大学 龍岡門",
+          "destinationName": "東京大學本鄉校區慢逛",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "目標09:00–11:00・保留1.5–2小時",
+        "name": "東京大學本鄉校區慢逛",
+        "note": "安田講堂外觀、銀杏大道與三四郎池周邊作候選，以校內當天開放動線為準。12/13葉況未定，不保證仍滿樹銀杏。",
+        "query": "東京大学 本郷キャンパス",
+        "transportToNext": {
+          "mode": "公車",
+          "minutes": 17,
+          "line": "茶51",
+          "direction": "",
+          "detail": "本鄉三丁目站→秋葉原，含步行約9分；午餐店未定，繞行另計。",
+          "origin": "東京大学 龍岡門",
+          "destination": "秋葉原駅",
+          "destinationName": "秋葉原短逛、MILK SHOP 酪",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "11:00–12:30・含移動彈性",
+        "name": "就近午餐",
+        "note": "餐廳未指定；不額外跨區去根津Yukikage。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "12:30–13:00・移動估算",
+        "name": "本鄉／午餐地點 → 秋葉原",
+        "note": "依東大離校出口與午餐位置選交通；先預留30分鐘，住宿與餐廳確定後再補乘換。",
+        "query": "東京大学 本郷 秋葉原",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "13:00–14:15・輕鬆短逛",
+        "name": "秋葉原短逛、MILK SHOP 酪",
+        "note": "補你收藏的牛乳小店；位於JR秋葉原站改札內、中央總武線千葉方向6號月台。需使用有效乘車券或入場券進站；若不順路就略過。附近遊戲機／扭蛋可隨興看看，最多留約1小時，不安排長段散步。營業與庫存出發前確認。",
+        "query": "MILK SHOP 酪 秋葉原 6番ホーム",
+        "transportToNext": {
+          "mode": "JR",
+          "minutes": 6,
+          "line": "山手線／京濱東北線",
+          "direction": "上野",
+          "detail": "秋葉原→上野；車程4分、站內步行約2分。",
+          "origin": "MILK SHOP 酪 秋葉原 6番ホーム",
+          "destination": "KURAMAE CANNELE エキュート上野",
+          "destinationName": "KURAMAE CANNELÉ ecute 上野店",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "14:15–14:45・移動估算",
+        "name": "秋葉原 → 上野",
+        "note": "預留乘車、找店與站內步行時間；前往JR上野站改札內的ecute。",
+        "query": "秋葉原 上野 JR",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "14:45–15:15",
+        "name": "KURAMAE CANNELÉ ecute 上野店",
+        "note": "補收藏的可麗露，改在上野分店外帶，不另繞藏前。JR上野站改札內；官網週末09:00–21:00（2026/10/29查）。目前藏前咖啡廳休業；購買後不安排內用候位。",
+        "query": "KURAMAE CANNELE エキュート上野",
+        "resources": [
+          {
+            "label": "官方分店資訊",
+            "url": "https://www.kuramae-cannele.jp/shops/index.html"
+          }
+        ],
+        "transportToNext": {
+          "mode": "步行",
+          "minutes": 4,
+          "line": "上野→京成上野",
+          "direction": "",
+          "detail": "地圖平面約140公尺；含出站與樓層預留15分鐘。若行李放巣鴨住宿，必須另留回程取件時間，不適用此直達估計。",
+          "origin": "KURAMAE CANNELE エキュート上野",
+          "destination": "京成上野駅",
+          "destinationName": "京成上野候車",
+          "checkedAt": "2026/11/8",
+          "source": "Google Maps 查詢當下路線，非12月旅行日班次；含步行，另留候車與進出館緩衝。"
+        }
+      },
+      {
+        "time": "15:15–16:45・依住宿調整",
+        "name": "取行李、回到京成上野",
+        "note": "由巢鴨住宿退房，早上先決定寄物位置。若寄在住宿，下午須回巢鴨取件再前往日暮里／上野；優先確認上野寄物選項以減少折返，未保證有空櫃。",
+        "query": "京成上野駅",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "目標16:50抵達車站",
+        "name": "京成上野候車",
+        "note": "取票、洗手間、走到月台，保留約30分鐘候車餘裕。",
+        "query": "京成上野駅 スカイライナー",
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "目標17:20上野發車",
+        "name": "Skyliner → 成田T1",
+        "note": "現行週日時刻：上野17:20／日暮里17:25→T1 18:03。12/13班次與座位待再核；勿在T2提前下車。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "約18:20起",
+        "name": "退稅出境確認、晚餐、等候報到",
+        "note": "2026/11起日本改退稅新制，需先做海關確認再託運，留45–60分鐘規劃緩衝。Peach成田國際線目前起飛前120分鐘才開始報到，22:05航班即20:05；提早到不保證能提早進免稅區。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      },
+      {
+        "time": "22:05",
+        "name": "MM627 回程",
+        "note": "依使用者提供訂單：成田第1航廈22:05起飛，12/14 01:25抵達桃園第1航廈；均為當地時間。",
+        "query": null,
+        "transportToNext": {
+          "display": false
+        }
+      }
+    ],
+    "notes": [
+      "東京大學本鄉是暫採校區；戶外及對外開放的共用空間可自由見學，學部建物與教室原則不能進入。不是預約導覽。",
+      "官網10/27查證：自由見學請在07:00–18:00範圍內；各門開放不同，週末部分大門關閉，仍可能開小門，依現場警衛指示。12/13臨時活動或限制出發前再核。",
+      "赤門正進行耐震改修，官網預計2027年9月左右完成；不當入校入口，也不保證拍得到完整無遮擋外觀。可由伊藤國際學術研究中心門或龍岡門等開放門進出，具體依當天公告。",
+      "校方規則：見學攝影限個人用途，不允許把照片／影片刊登於SNS等；不把這裡列為攝影師旅拍、商業攝影或婚紗場地。以安靜逛校園為主。",
+      "依旅客訂單，回程航班22:05由成田起飛。依Peach成田國際線官網：T1北翼4F，報到起飛前120–50分鐘。",
+      "目標17:20 Skyliner、18:03到T1；取行李與到上野車站時間須依最終住宿另留。",
+      "機場免稅店各店閉店時間不同，不少約20:30–21:30；完成報到安檢後可逛時間有限，不能保證每間都開。",
+      "下午收藏補點為彈性安排；取行李與Skyliner優先，遇排隊就外帶或略過。",
+      "住宿退房：11:00前完成。"
+    ],
+    "rain": "小雨縮短校園戶外散步；大雨可取消校園改室內用餐休息，保持機場交通餘裕。",
+    "weather": {
+      "status": "forecast_pending",
+      "text": "當日預報尚未發布，接近出發時更新。",
+      "sourceUrl": "https://www.jma.go.jp/bosai/forecast/",
+      "checkedAt": null
+    }
+  }
+]</script><script>
 'use strict';
 const KEY='japan-travel-editor-v1';const seed=JSON.parse(document.getElementById('seed').textContent);const $=id=>document.getElementById(id);const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const uid=()=>crypto.randomUUID();const minutes=s=>/^\d{2}:\d{2}$/.test(s)?Number(s.slice(0,2))*60+Number(s.slice(3)):null;const clock=n=>n==null?'待補時間':n>=1440?'跨日 '+String(Math.floor(n/60)%24).padStart(2,'0')+':'+String(n%60).padStart(2,'0'):String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');
